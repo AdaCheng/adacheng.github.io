@@ -136,7 +136,7 @@ menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
-  papers: list-ol
+  papers: user
   about: user
   categories: th
   schedule: calendar
