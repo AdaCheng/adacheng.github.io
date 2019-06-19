@@ -218,6 +218,7 @@ font:
 social:
   #LinkLabel: Link
   Github: https://github.com/AdaCheng
+  Email: LeslieCheng0701@outlook.com
 
 
 # Social Links Icons
@@ -229,7 +230,8 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
+  GitHub: github-alt
+  Email: envelope
   Twitter: twitter
   Weibo: weibo
 
