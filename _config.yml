@@ -8,7 +8,7 @@ title: Ada's World
 subtitle: 
 description: Keep looking, don't settle.
 author: AdaCheng
-# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
+#Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%m-%d-%Y'
 
@@ -118,11 +118,13 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
+  docs:
+    papers: /papers/
   categories: /categories/
   about: /about/
   archives: /archives/
-  tags: /tags/
-  sitemap: /sitemap.xml
+  #tags: /tags/
+  #sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
@@ -134,6 +136,8 @@ menu:
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  docs: docs
+  papers: papers
   home: home
   about: user
   categories: th
@@ -141,7 +145,7 @@ menu_icons:
   tags: tags
   archives: archive
   sitemap: sitemap
-  commonweal: heartbeat
+  #commonweal: heartbeat
 
 
 
