@@ -9,7 +9,7 @@ subtitle:
 description: Keep looking, don't settle.
 author: AdaCheng
 #Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-Hans
+language: en
 date_format: '%m-%d-%Y'
 
 # URL
@@ -118,11 +118,11 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  papers: /papers/
+  #papers: /papers/
   categories: /categories/
   about: /about/
   archives: /archives/
-  paper: /tags/
+  tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -140,7 +140,7 @@ menu_icons:
   about: user
   categories: th
   schedule: calendar
-  paper: tags
+  tags: tags
   archives: archive
   sitemap: sitemap
   #commonweal: heartbeat
