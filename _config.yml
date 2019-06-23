@@ -9,7 +9,7 @@ subtitle:
 description: Keep looking, don't settle.
 author: AdaCheng
 #Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%m-%d-%Y'
 
 # URL
@@ -122,7 +122,7 @@ menu:
   categories: /categories/
   about: /about/
   archives: /archives/
-  #tags: /tags/
+  paper: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -140,7 +140,7 @@ menu_icons:
   about: user
   categories: th
   schedule: calendar
-  tags: tags
+  paper: tags
   archives: archive
   sitemap: sitemap
   #commonweal: heartbeat
