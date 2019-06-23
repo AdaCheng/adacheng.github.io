@@ -1,6 +1,6 @@
 ---
 layout: page
-type: papers
+type: publications
 ---
 
 Building...

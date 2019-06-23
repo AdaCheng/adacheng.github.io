@@ -2,7 +2,7 @@ title:
   archive: Archive
   category: Category
   tag: Tag
-  papers: Papers
+  publications: Publications
   schedule: Schedule
   archives: Archives
   categories: Categories
@@ -16,7 +16,7 @@ menu:
   archives: Archives
   categories: Categories
   tags: Tags
-  papers: Papers
+  publications: Publications
   about: About
   search: Search
   schedule: Schedule

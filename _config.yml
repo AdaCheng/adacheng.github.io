@@ -119,7 +119,7 @@ index_with_subtitle: false
 menu:
   home: /
   about: /about/
-  papers: /papers/
+  publications: /publications/
   categories: /categories/
   archives: /archives/
   tags: /tags/
@@ -136,7 +136,7 @@ menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
-  papers: quote-left
+  publications: quote-left
   about: user
   categories: th
   schedule: calendar
