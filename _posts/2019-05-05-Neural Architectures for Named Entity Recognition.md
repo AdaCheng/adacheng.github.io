@@ -1,8 +1,8 @@
 ---
 title: Neural Architectures for Named Entity Recognition
-description: A paper published in NAACL'16.
+description: An introduction for a paper published in NAACL'16.
 categories:
- - Paper
+ - Paper_Note
 tags:
  - Named Entity Recognition
 ---
@@ -15,13 +15,13 @@ __Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Ch
 
 # Motivation
 ## Challenges
-- Only a very small amount of supervised training data available.
-- Few constraints of words that can be names.
+1. Only a very small amount of supervised training data available.
+2. Few constraints of words that can be names.
 
 ## Solutions
-- Hand-crafted features & domain-specific knowledge
+1. Hand-crafted features & domain-specific knowledge
     - costly in new languages and new domains.
-- Unsupervised learning (but to augment rather than replace)
+2. Unsupervised learning (but to augment rather than replace)
 
 # Methods
 ## Input Word Embedding
