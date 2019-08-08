@@ -15,19 +15,22 @@ __Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Ch
 
 # Motivation
 ## Challenges
-1. Only a very small amount of supervised training data available.
-2. Few constraints of words that can be names.
+- Only a very small amount of supervised training data available.
+- Few constraints of words that can be names.
 
 ## Solutions
 1. Hand-crafted features & domain-specific knowledge
-    - costly in new languages and new domains.
-2. Unsupervised learning (but to augment rather than replace)
+    - costly in new languages and new domains
+2. Unsupervised learning
+    - but to augment rather than replace
 
 # Methods
 ## Input Word Embedding
 ### Intuitions
-- Many languages have orthographic or morphological evidence that something is a name. -> Use a model that constructs representations of words from representations of the characters.
-- Names appear in regular contexts in large corpora. -> Use embeddings learned from a large corpus that are sensitive to word order.
+1. Many languages have orthographic or morphological evidence that something is a name.  
+-> Use a model that constructs representations of words from representations of the characters.
+2. Names appear in regular contexts in large corpora.  
+-> Use embeddings learned from a large corpus that are sensitive to word order.
 
 ### Character-based models of words
 #### Advantages
