@@ -34,15 +34,15 @@ __Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Ch
 
 ### Character-based models of words
 #### Advantages
-- Useful for morphologically rich languages and to handle the out-of-vocabulary problem.
+Useful for morphologically rich languages and to handle the out-of-vocabulary problem.
 
 #### Framework
+
 ![Char-level](/assets/images/post/2019-05-05/01.png)  
 
-- Use pretrained word embedding (skip-n-gram) to initialize lookup table.
 - The embedding for a word derived from its characters is the concatenation of its forward and backward representations from the bidirectional LSTM.
-- Then the character-level representation is concatenated with a word-level representation from a word lookup-table.
-- To encourage the model to depend on both representations, use dropout training.
+- The word-level representation is from lookup table initialized by word embedding (skip-n-gram).
+- Then the character-level representation is concatenated with the word-level representation. To encourage the model to depend on both representations, use dropout training.
 
 ## LSTM-CRF Model
 ### Traditional CRF
