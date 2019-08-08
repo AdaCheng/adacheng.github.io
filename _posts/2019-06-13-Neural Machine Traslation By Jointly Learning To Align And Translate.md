@@ -21,7 +21,7 @@ __Dzmitry Bahdanau, KyungHyun Cho, Yoshua Bengio__
 
 - A family of encoder-decoders and encode a source sentence into a fixed-length vector from which a decoder generates a translation.
 
-![Pic](TIM图片20190612110531.png)
+![Pic](/assets/images/post/2019-06-13/01.png)
 
 **Issue**
 
@@ -35,7 +35,7 @@ Each time the proposed model generates a word in a translation, it (soft-)search
 
 The new architecture consists of a bidirectional RNN as an encoder and a decoder that emulates searching through a source sentence during decoding a translation.
 
-![Pic](TIM图片20190612111713.png)
+![Pic](/assets/images/post/2019-06-13/02.png)
 
 ## Encoder: Bidirectional RNN
 A BiRNN consists of forward and backward RNNs. The annotation for each word $x_j$ by concatenating the forward hidden state $h_j(f)$ and the backward one %h_j(b)$, i.e., $h_j = [h_j(f);h_j(b)]$.
@@ -45,23 +45,23 @@ Each annotation $h_i$ contains information about the whole input sequence with a
 ## Decoder
 Defination of each conditional probability.
 
-![Pic](TIM图片20190612113400.png)
+![Pic](/assets/images/post/2019-06-13/03.png)
 
 where $s_i$ is an RNN hidden state for time $i$, computed by
 
-![Pic](TIM图片20190612114456.png)
+![Pic](/assets/images/post/2019-06-13/04.png)
 
 The context vector $c_i$ is computed as a weighted sum of these annotations $h_i$. $c_i$ is the expected annotation over all the annotations with probabilities $a_{ij}$.
 
-![Pic](TIM图片20190612115042.png)
+![Pic](/assets/images/post/2019-06-13/05.png)
 
 $a_{ij}$ is a probability that the target word $y_i$ is aligned to a source word $x_j$. The weight $a_{ij}$ of each annotation $h_j$ is computed by
 
-![Pic](TIM图片20190612120843.png)
+![Pic](/assets/images/post/2019-06-13/06.png)
 
 where
 
-![Pic](TIM图片20190612120929.png)
+![Pic](/assets/images/post/2019-06-13/07.png)
 
 is an alignment model which scores how well the inputs around position $j$ and the output at position $i$ match. The alignment model directly computes a soft alignment, which allows the gradient of the cost function to be backpropagated through.
 
@@ -90,16 +90,16 @@ is an alignment model which scores how well the inputs around position $j$ and t
 - With the sentences of length up to 50 words (RNNencdec-50, RNNsearch-50)
 
 ## Result
-![Pic](TIM图片20190613010629.png)
+![Pic](/assets/images/post/2019-06-13/08.png)
 
-![Pic](TIM图片20190612124146.png)
+![Pic](/assets/images/post/2019-06-13/09.png)
 
 ## Analysis
 ### Alignment
 
-![Pic](TIM图片20190613011019.png)
-![Pic](TIM图片20190613011035.png)
-![Pic](TIM图片20190613011048.png)
+![Pic](/assets/images/post/2019-06-13/10.png)
+![Pic](/assets/images/post/2019-06-13/11.png)
+![Pic](/assets/images/post/2019-06-13/12.png)
 
 - Soft-alignment can let the model look at not only one word.
 - Soft-alignment can deal with source and target phrases of different lengths, without requiring a counter-intuitive way of mapping some words to or from nowhere ([NULL]).
@@ -107,17 +107,17 @@ is an alignment model which scores how well the inputs around position $j$ and t
 ### Long sentences
 The source sentence from the test set
 
-![Pic](TIM图片20190613011955.png)
+![Pic](/assets/images/post/2019-06-13/13.png)
 
 The RNNencdec-50
 
-![Pic](TIM图片20190613012105.png)
+![Pic](/assets/images/post/2019-06-13/14.png)
 
 It replaced [based on his status as a health care worker at a hospital] in the source sentence with [enfonction de son etat de sante] ('based on his state of health').
 
 The RNNsearch-50
 
-![Pic](TIM图片20190613012310.png)
+![Pic](/assets/images/post/2019-06-13/15.png)
 
 Preserving the whole meaning of the input sentence without omitting any details.
 
