@@ -130,20 +130,20 @@ Useful for morphologically rich languages and to handle the out-of-vocabulary pr
 ![Results](/assets/images/post/2019-05-05/14.png)
 
 # Related Works
-- Carreras (2002): combining several small fixed-depth decision trees;
-- Florian (2003): combining the output of four diverse classifiers;
-- Qi (2009): proving with a neural network by doing unsupervised learning on a massive unlabeled corpus;
-- Collobert (2011): a CNN over a sequence of word embedding with a CRF layer on top;
-- Huang (2015): LSTM-CRF with hand-crafted spelling features;
-- Zhou and Xu (2015): adapting to the semantic role labeling task;
-- Lin and Wu (2009): a linear chain CRF with L2 regularization, and add phrase cluster features extracted from the web data and spelling features;
-- Passos (2014): a linear chain CRF with spelling features and gazetteers.
-- Cucerzan and Yarowsky (1999;2002): semi-supervised bootstrapping algorithms for NER by co-training character-level and token-level features;
-- Eisenstein (2011): Bayesian nonparametrics to construct a database of named entities in an almost unsupervised setting;
-- Ratinov and Roth (2009): using a regularized average perceptron and aggregating context information;
-- Gillick (2015): think as a sequence to sequence learning problem and incorporate character-based representations into their encoder model;
-- Chiu and Nichols (2015): use CNNs to learn character-level features.
+- **Carreras (2002):** combining several small fixed-depth decision trees;
+- **Florian (2003):** combining the output of four diverse classifiers;
+- **Qi (2009):** proving with a neural network by doing unsupervised learning on a massive unlabeled corpus;
+- **Collobert (2011):** a CNN over a sequence of word embedding with a CRF layer on top;
+- **Huang (2015):** LSTM-CRF with hand-crafted spelling features;
+- **Zhou and Xu (2015):** adapting to the semantic role labeling task;
+- **Lin and Wu (2009):** a linear chain CRF with L2 regularization, and add phrase cluster features extracted from the web data and spelling features;
+- **Passos (2014):** a linear chain CRF with spelling features and gazetteers.
+- **Cucerzan and Yarowsky (1999;2002):** semi-supervised bootstrapping algorithms for NER by co-training character-level and token-level features;
+- **Eisenstein (2011):** Bayesian nonparametrics to construct a database of named entities in an almost unsupervised setting;
+- **Ratinov and Roth (2009):** using a regularized average perceptron and aggregating context information;
+- **Gillick (2015):** think as a sequence to sequence learning problem and incorporate character-based representations into their encoder model;
+- **Chiu and Nichols (2015):** use CNNs to learn character-level features.
 
-# Shortcomings & Improvements
+# Future
 - add some hand-crafted features or domain-spefic knowledge that is different from char-level.
 
