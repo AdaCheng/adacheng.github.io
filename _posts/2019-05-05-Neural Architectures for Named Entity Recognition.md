@@ -69,9 +69,9 @@ Useful for morphologically rich languages and to handle the out-of-vocabulary pr
 
 ![LSTM-CRF](/assets/images/post/2019-05-05/06.png)  
 
-- The representation of a word using this model is obtained by concatenating its left and right context representations, c\_i = [l\_i;r\_i];
-- Then c_i was linearly projected onto a layer whose size is equal to the number of distinct tags.
-- Use a CRF as previously described to take into account neighboring tags, yielding the final predictions for every word y_i.
+- The representation of a word using this model is obtained by concatenating its left and right context representations, $c_i = [l_i;r_i]$;
+- Then $c_i$ was linearly projected onto a layer whose size is equal to the number of distinct tags.
+- Use a CRF as previously described to take into account neighboring tags, yielding the final predictions for every word $y_i$.
 
 ## Transition-Based Chunking Model
 ### Stack Long Short-Term Memories (Reference)
@@ -99,7 +99,7 @@ Useful for morphologically rich languages and to handle the out-of-vocabulary pr
 ### Example: Mark Watney visited Mars.
 ![Example](/assets/images/post/2019-05-05/09.png)
 
-- **Representing Labeled Chunks**: run a bidirectional LSTM over the embeddings of its constituent tokens together with a token representing the type of the chunk being identified, given as g(u, ..., v, r_y), where r_y is a learned embedding of a label type. 
+- **Representing Labeled Chunks**: run a bidirectional LSTM over the embeddings of its constituent tokens together with a token representing the type of the chunk being identified, given as $g(u, ..., v, r_y)$, where $r_y$ is a learned embedding of a label type. 
 
 ## IOBES Tagging Schemes
 - I -> Inside;
