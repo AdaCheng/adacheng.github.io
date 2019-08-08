@@ -78,7 +78,8 @@ Useful for morphologically rich languages and to handle the out-of-vocabulary pr
 
 ![Stack-LSTM](/assets/images/post/2019-05-05/07.png)  
     
-    // Transition-Based Dependency Parsing with Stack Long Shrot-Term Memory
+    // From Paper <Transition-Based Dependency Parsing with Stack Long Shrot-Term Memory>. 
+    // For details, please see my another paper note.
 
 - The LSTM with a "stack pointer".
 - The **POP** operation moves the stack pointer to the previous element.
