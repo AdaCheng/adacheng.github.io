@@ -28,7 +28,7 @@ __Ilya Sutskever, Oriol Vinyals, Quoc V.Le__
     + Cannot be used to map sequences to sequences whose lengths are not known a-priori, because DNNs can only be applied to problems whose inputs and targets can be sensibly encoded with vectors of fixed dimensionality.
 
 ## Solution
-- Use one LSTM to read the input sequence to obtain large fixed-dimensional vector representation, and then use another LSTM to extract the output sequence from the vector.
+Use one LSTM to read the input sequence to obtain large fixed-dimensional vector representation, and then use another LSTM to extract the output sequence from the vector.
 
 ![Pic](/assets/images/post/2019-06-11/01.png)  
 
@@ -68,7 +68,7 @@ Using a simple left-to-right beam search decoder.
 > More details can be found in [Paper $3.4](https://arxiv.org/pdf/1409.3215.pdf)
 
 ### EOS
-- Each sentence ends with a special end-of-sentence symbol "<EOS>", which enables the model to define a distribution over sequences of all possible lengths.
+Each sentence ends with a special end-of-sentence symbol "<EOS>", which enables the model to define a distribution over sequences of all possible lengths.
 
 ### LSTMs
 - Use two different LSTMs: one for the input sequence and another for the output sequence, because doing so increses the number model parameters at negligible computational cost and makes it natural to train the LSTM on multiple language pairs simultaneously.
