@@ -58,7 +58,7 @@ Attention 机制可以被描述为将 query 和 key-value pairs 映射到 output
 #### Attention机制
 Attention 机制分为很多种。
 
-![Fom](/assets/images/post/2019-05-29/06.png)
+![Fom](/assets/images/post/2019-05-29/attention_mechanism_table.png)
 
 其中，两种最常用的 attention function 是：
 
@@ -67,74 +67,74 @@ Attention 机制分为很多种。
 
 两个函数的理论复杂度相似，在 $d_k$（key 的维数）小的时候，两者表现相似，在 $d_k$ 大的时候，前者表现更优异，但是在代码实践上，后者的计算速度更快、空间效率更高。
 
-![Fom](/assets/images/post/2019-05-29/07.png)
+![Fom](/assets/images/post/2019-05-29/06.png)
 
 因此，本文采用 scaled dot-product attention，通过采用缩放因子 $1/(d_k)^(1/2)$ 使梯度更加稳定。
 
 #### 详细流程（以 encoder 内部 self-attention 为例）
 
-![Fom](/assets/images/post/2019-05-29/08.png)
+![Fom](/assets/images/post/2019-05-29/07.png)
 
 1.**Linear**  
 将每个 input word 通过 embedding algorithm 得到 512 维的词向量。
 
-![Fom](/assets/images/post/2019-05-29/09.png) 
+![Fom](/assets/images/post/2019-05-29/08.png) 
 
 将每一个词向量与训练中学习到的三个 512 * 64 的矩阵 $W_Q$, $W_K$ 和 $W_V$ （所有输入共享）相乘，得到三个 64 维的向量 Query, Key 和 Value。 
 
-![Fom](/assets/images/post/2019-05-29/10.png)  
+![Fom](/assets/images/post/2019-05-29/09.png)  
 
 > Tips: 思考 Query/Key/Value 各自的含义。
 
 2.**MatMul**  
 将向量 $q$ 和 $k$ 相乘得到 score，表示对某个确定位置的词进行编码的时候对句内其他部分的词的相关性。
 
-![Fom](/assets/images/post/2019-05-29/11.png)
+![Fom](/assets/images/post/2019-05-29/10.png)
 
 3.**Scale & SoftMax**   
 采用缩放因子，使梯度更稳定，然后加上 softmax 操作，进行归一化，表示这个位置对每个词的关注程度。
 
-![Fom](/assets/images/post/2019-05-29/12.png)
+![Fom](/assets/images/post/2019-05-29/11.png)
 
 4.**MatMul & Sum**  
 将 softmax score 和 value 按位相乘，保留关注程度高的词的 value，削弱关注程度低的词的 value，最后将所有加权向量加和，得到该位置的 self-attention 的输出矩阵。
 
-![Fom](/assets/images/post/2019-05-29/13.png)
+![Fom](/assets/images/post/2019-05-29/12.png)
 
 #### 实际应用——矩阵操作
 1.**Linear**  
 将所有词向量合并为输入矩阵 $X$，并且分别乘以权重矩阵 $W_Q, W_K, W_V$，得到 Query, Key, Value 矩阵。
 
-![Fom](/assets/images/post/2019-05-29/14.png)
+![Fom](/assets/images/post/2019-05-29/13.png)
 
 2.**Self-Attention**  
 用矩阵处理，将剩余步骤合并成计算 self-attention 层输出的公式。
 
-![Fom](/assets/images/post/2019-05-29/15.png)
+![Fom](/assets/images/post/2019-05-29/14.png)
 
 ### Multi-Head Attention
 Multi-Head Attention 将不同位置不同子空间的信息联合起来。
 
-![Fom](/assets/images/post/2019-05-29/16.png)
+![Fom](/assets/images/post/2019-05-29/15.png)
 
 #### 详细流程
 
-![Fom](/assets/images/post/2019-05-29/17.png)
+![Fom](/assets/images/post/2019-05-29/16.png)
 
 1.**Linear**  
 共有 8 个 head，每一个 head 对应一组 $W_Q$, $W_K$, $W_V$ 矩阵，从而得到 8 组 Query, Key, Value 矩阵。
 
-![Fom](/assets/images/post/2019-05-29/18.png)
+![Fom](/assets/images/post/2019-05-29/17.png)
 
 2.**Scaled Dot-Product Attention**  
 按上述步骤计算，得到 8 个不同的输出矩阵。
 
-![Fom](/assets/images/post/2019-05-29/19.png)
+![Fom](/assets/images/post/2019-05-29/18.png)
 
 3.**Concat & Linear**  
 将 8 个输出矩阵拼接，并进行线性变换，乘以另外的权重矩阵 $W_O$。
 
-![Fom](/assets/images/post/2019-05-29/20.png)
+![Fom](/assets/images/post/2019-05-29/19.png)
 
 #### 优点
 1. 扩展了模型集中于不同位置的能力。
@@ -144,7 +144,7 @@ Multi-Head Attention 将不同位置不同子空间的信息联合起来。
 
 ### 三种 Attention 方式
 
-![Fom](/assets/images/post/2019-05-29/21.png)
+![Fom](/assets/images/post/2019-05-29/20.png)
 
 #### Encoder-Decoder Attention
 - Query: 来自前一层 decoder layer
@@ -161,7 +161,7 @@ Multi-Head Attention 将不同位置不同子空间的信息联合起来。
 两层全连接网络，第一层是 ReLU，第二层是线性激活，可以看成两层的 1 * 1 的 1d-conv。
 其中，hidden-size 的变化为：512 -> 2048 -> 512。
 
-![Fom](/assets/images/post/2019-05-29/22.png)
+![Fom](/assets/images/post/2019-05-29/21.png)
 
 # 细节问题
 ## Residual Connection
@@ -195,7 +195,7 @@ Normalization 有很多种，但目的都是把输入转化为均值为 0 方差
 
 ## Embedding
 
-![Fom](/assets/images/post/2019-05-29/23.png)
+![Fom](/assets/images/post/2019-05-29/22.png)
 
 ### Positional Encoding
 因为 Transformer 完全摒弃了 RNN 和 CNN，无法利用所需要的位置信息，所以必须要另外添加位置信息，包括绝对位置信息和相对位置信息。
@@ -207,11 +207,11 @@ Normalization 有很多种，但目的都是把输入转化为均值为 0 方差
 
 采用了第一种方法，因为利用正弦和余弦函数的周期性，可对相对位置关系进行建模，同时比较从训练中学习到的 positional embedding，不会受到训练序列的长度的影响。
 
-![Fom](/assets/images/post/2019-05-29/24.png)
+![Fom](/assets/images/post/2019-05-29/23.png)
 
 # 优点
 
-![Fom](/assets/images/post/2019-05-29/25.png)
+![Fom](/assets/images/post/2019-05-29/24.png)
 
 1. 每层计算复杂度低；
 2. 并行计算，序列操作复杂度为常数项；
