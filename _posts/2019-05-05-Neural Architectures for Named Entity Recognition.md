@@ -47,8 +47,8 @@ Useful for morphologically rich languages and to handle the out-of-vocabulary pr
 ## LSTM-CRF Model
 ### Traditional CRF
 #### Notations
-- P is the matrix of scores output by the bidirectional LSTM network. P is of size n * k, where k is the number of distinct tags, and P\_{i,j} is the score of the j^th tag of the i^th word in a sentence.
-- A is a matrix of transition scores such that A\_{i,j} represents the score of a transition from the tag i to tag j. y\_0 and y\_n are the __start__ and __end__ tags of a sentence, that we add to the set of possible tags. A is therefore a square matrix of size k + 2.
+- $P$ is the matrix of scores output by the bidirectional LSTM network. $P$ is of size $n \times k$, where $k$ is the number of distinct tags, and $P_{i,j}$ is the score of the $j^{th}$ tag of the $i^{th}$ word in a sentence.
+- $A$ is a matrix of transition scores such that $A_{i,j}$ represents the score of a transition from the tag $i$ to tag $j$. $y_0$ and $y_n$ are the __start__ and __end__ tags of a sentence, that we add to the set of possible tags. $A$ is therefore a square matrix of size $k + 2$.
 
 #### Formulations
 - Predictions' Scores  
