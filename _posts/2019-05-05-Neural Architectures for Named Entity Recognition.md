@@ -112,19 +112,19 @@ __Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Ch
 
 ## Results
 ### English NER results (CoNLL-2003 test set)
-![Results](TIM图片20190410145350.png)
+![Results](/assets/images/post/2019-05-05/10.png)
 
 ### German NER results (CoNLL-2003 test set)
-![Results](TIM图片20190410145528.png)
+![Results](/assets/images/post/2019-05-05/11.png)
 
 ### Dutch NER results (CoNLL-2002 test set)
-![Results](TIM图片20190410145627.png)
+![Results](/assets/images/post/2019-05-05/12.png)
 
 ### Spanish NER results (CoNLL-2002 test set)
-![Results](TIM图片20190410145734.png)
+![Results](/assets/images/post/2019-05-05/13.png)
 
 ### Different configurations (English)
-![Results](TIM图片20190410145957.png)
+![Results](/assets/images/post/2019-05-05/14.png)
 
 # Related Works
 - Carreras (2002): combining several small fixed-depth decision trees;
