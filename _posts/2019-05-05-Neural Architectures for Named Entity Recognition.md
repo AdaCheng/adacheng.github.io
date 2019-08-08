@@ -13,6 +13,8 @@ __Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Ch
 *Carnegie Mellon University, NLP Group of Pompeu Fabra University*  
 *NAACL'16*
 
+[Linke of Paper](https://arxiv.org/abs/1603.01360)
+
 # Motivation
 ## Challenges
 - Only a very small amount of supervised training data available.
