@@ -34,18 +34,18 @@ Use one LSTM to read the input sequence to obtain large fixed-dimensional vector
 
 # Model
 ## Function
-Estimate the conditional probability $p(y_1, ..., y_T'|x_1, ..., x_T)$ where $(x_1, ..., x_T)$ is an input sequence and $(y_1, ..., y_T')$ is its corresponding output sequence whose length $T'$ may differ from $T$.
+Estimate the conditional probability $p(y_1, ..., y_T'\|x_1, ..., x_T)$ where $(x_1, ..., x_T)$ is an input sequence and $(y_1, ..., y_T')$ is its corresponding output sequence whose length $T'$ may differ from $T$.
 
 ![Pic](/assets/images/post/2019-06-11/02.png) 
 
-Each $p(y_t|v, y_1, ..., y_{t-1})$ distribution is represented with a softmax over all the words in the vocabulary.
+Each $p(y_t\|v, y_1, ..., y_{t-1})$ distribution is represented with a softmax over all the words in the vocabulary.
 
 ## Training
 Maximize the log probability of a correct translation $T$ given the source sentence $S$.
 
 ![Pic](/assets/images/post/2019-06-11/03.png)
 
-Where $|S|$ is the size of training set.
+Where $\|S\|$ is the size of training set.
 
 ## Decoding
 Produce translations by finding the most likely translation according to the LSTM.
