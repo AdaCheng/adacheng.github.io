@@ -69,6 +69,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 - **Problem:**The generation module will take some modern concepts(which never occur in the classical poetry corpus, such as airplane and refrigerator) as a UNK symbol and generate totally irrelevant poems.
 
 - **Solution:**
+
     1.Build a Poetry Knowledge Graph (PKG) from Wikipedia data, which contains 616,360 entities and 5,102,192 relations.
 
     2.Use PKG to map the modern concepts to its most relevant entities in poetry, to guarantee both quality and relevance of generated poems.
