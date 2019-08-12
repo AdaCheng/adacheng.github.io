@@ -115,3 +115,6 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 ## Generation Module
 
 ![img](/assets/images/post/2019-08-12/005.png) 
+
+>Reference: [Chinese Poetry Generation with a Working Memory Model](https://arxiv.org/abs/1809.04306)
+>![img](/assets/images/post/2019-08-12/006.png) 
