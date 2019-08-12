@@ -44,6 +44,9 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
 1. Use (THULAC)[http://thulac.thunlp.org/] to conduct Chinese word segmentation;
 2. compute the importance $r(w)$ of each word $w$:  
+
 $$
+\begin{equation}
 r(w)=[\alpha * t i(w)+(1-\alpha) * \operatorname{tr}(w)]
+\end{equation}
 $$
