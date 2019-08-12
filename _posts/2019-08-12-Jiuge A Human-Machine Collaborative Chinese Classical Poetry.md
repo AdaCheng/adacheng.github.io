@@ -115,10 +115,11 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 ## Generation Module
 
 
->Reference: [Chinese Poetry Generation with a Working Memory Model](https://arxiv.org/abs/1809.04306)
->__Xiaoyuan Yi, Maosong Sun, Ruoyu Li, Zonghan Yang__  
+>Reference:  
+>[Chinese Poetry Generation with a Working Memory Model](https://arxiv.org/abs/1809.04306)  
+>__Xiaoyuan Yi, Maosong Sun, Ruoyu Li, Zonghan Yang__   
 >*Tsinghua University*  
->*IJCAI'18*
+>*IJCAI'18*  
 >![img](/assets/images/post/2019-08-12/006.png) 
 
 ![img](/assets/images/post/2019-08-12/005.png) 
