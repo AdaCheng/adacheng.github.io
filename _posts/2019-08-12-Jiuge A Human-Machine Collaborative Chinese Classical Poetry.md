@@ -47,6 +47,10 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
 $$
 \begin{equation}
-r(w)=[\alpha * t i(w)+(1-\alpha) * \operatorname{tr}(w)]
+r(w)=[\alpha * ti(w)+(1-\alpha) * tr(w)]
 \end{equation}
 $$
+
+where $ti(w)$ and $tr(w)$ are the TF-IDF value and TextRank score,$\alpha$ is a hyper-parameter to balance the weights of $ti(w)$ and $tr(w)$.
+
+3. Select top K words with the highest scores.
