@@ -37,3 +37,9 @@ __Zhipeng Guo, Xiaoyuan Yi, Maosong Sun, Wenhao Li, Cheng Yang, Jiannan Liang, H
 
 **Processing:**
 Given the user-specified genre, style and inputs, the preprocessing module extractes several keywords from the inputs and then conducts keyword expansion to introduce richer information. With these preprocessed keywords, the generation module generates a poem draft. The postprocessing module re-ranks the candidates of each line and removes the ones that do not conform to structural and phonological requirements. At last, the collaborative revision module interacts with the user and dynamically updates the draft for several times according to the user's revision, to collaboratively create a satisfying poem.
+
+## Input Preprocessing Module
+### Keyword Extraction
+- For plain text
+
+1. Use （THULAC)[http://thulac.thunlp.org/] to conduct Chinese word segmentation and compute the importance $r(w)$
