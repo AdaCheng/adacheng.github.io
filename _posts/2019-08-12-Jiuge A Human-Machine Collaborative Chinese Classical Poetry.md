@@ -54,3 +54,11 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
     where $ti(w)$ and $tr(w)$ are the TF-IDF value and TextRank score,$\alpha$ is a hyper-parameter to balance the weights of $ti(w)$ and $tr(w)$.
 
     3.Select top K words with the highest scores.
+
+- For each image
+
+    1.Use (Aliyun image recognition tool)[https://ai.aliyun.com/image].
+    2.Gives the names of five recognized objects with corresponding probability $s(w)$.
+    3.Select top K words with the highest $s(w) \cdot r(w)$.
+
+### Keyword Mapping
