@@ -61,7 +61,29 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
     1.Use (Aliyun image recognition tool)[https://ai.aliyun.com/image].
 
     2.Gives the names of five recognized objects with corresponding probability $s(w)$.
-    
+
     3.Select top K words with the highest $s(w) \cdot r(w)$.
 
 ### Keyword Mapping
+
+- **Problem:**The generation module will take some modern concepts(which never occur in the classical poetry corpus, such as airplane and refrigerator) as a UNK symbol and generate totally irrelevant poems.
+
+- **Solution:**
+    1.Build a Poetry Knowledge Graph (PKG) from Wikipedia data, which contains 616,360 entities and 5,102,192 relations.
+
+    2.Use PKG to map the modern concepts to its most relevant entities in poetry, to guarantee both quality and relevance of generated poems.
+
+    3.For a modern concept word $w_i$, score its each neighbor word $w_j$ by:
+
+    $$
+    \begin{equation}
+    g\left(w_{j}\right)=t f_{w i k i}\left(w_{j} | w_{i}\right) \cdot \log \left(\frac{N}{1+d f\left(w_{j}\right)}\right) \cdot \arctan \left(\frac{p\left(w_{j}\right)}{\tau}\right)
+    \end{equation}
+    $$
+    
+    where $tf_{wiki}(w_j|w_i)$ is the term frequency of $w_j$ in the Wikipedia article of $w_i$, $df(w_j)$ is the number of Wikipedia articles containing $w_j$, $N$ is the number of Wikipedia articles, and $p(w_j)$ is the word frequency counted in all articles.
+
+- **Example:**
+    ![img](/assets/images/post/2019-08-12/003.png)  
+
+
