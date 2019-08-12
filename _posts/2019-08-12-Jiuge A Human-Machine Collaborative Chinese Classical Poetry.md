@@ -85,6 +85,29 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
     where $tf_{wiki}(w_j \| w_i)$ is the term frequency of $w_j$ in the Wikipedia article of $w_i$, $df(w_j)$ is the number of Wikipedia articles containing $w_j$, $N$ is the number of Wikipedia articles, and $p(w_j)$ is the word frequency counted in all articles.
 
 - **Example:**
+
     ![img](/assets/images/post/2019-08-12/003.png)  
 
+### Keyword Extension
 
+- **Problem:**More keywords could lead to richer contents and emotions in generated poems. If the number of extracted keywords is less than $K$, further conduct keywords extension.
+
+- **Solution:**
+
+    1.Build a Poetry Word Co-occurrence Graph (PWCG), which indicates the co-occurrence of two words in the same poem.
+
+    2.The weight of the edge between two words is calculated according to the Pointwise Mutual Information (PMI).
+
+    $$
+    \begin{equation}
+    P M I\left(w_{i}, w_{j}\right)=\log \frac{p\left(w_{i}, w_{j}\right)}{p\left(w_{i}\right) * p\left(w_{j}\right)}
+    \end{equation}
+    $$
+
+    where $p(w_i)$ and $p(w_i, w_j)$ are the word frequency and co-occurrence frequency in poetry corpus.
+
+    3.For a given word $w$, get all its adjacent words $w_k$ in PWCG and select those with higher values of $\log p\left(w_{k}\right) * P M I\left(w, w_{k}\right)+\beta * r\left(w_{k}\right)$ where $\beta$ is a hyperparameter.
+
+- **Example:**
+
+    ![img](/assets/images/post/2019-08-12/004.png) 
