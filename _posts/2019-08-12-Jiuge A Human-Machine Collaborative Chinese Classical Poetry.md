@@ -42,7 +42,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 ### Keyword Extraction
 - For plain text
 
-    1.Use (THULAC)[http://thulac.thunlp.org/] to conduct Chinese word segmentation; 
+    1.Use [THULAC](http://thulac.thunlp.org/) to conduct Chinese word segmentation; 
 
     2.compute the importance $r(w)$ of each word $w$:  
 
@@ -58,7 +58,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
 - For each image
 
-    1.Use (Aliyun image recognition tool)[https://ai.aliyun.com/image].
+    1.Use [Aliyun image recognition tool](https://ai.aliyun.com/image).
 
     2.Gives the names of five recognized objects with corresponding probability $s(w)$.
 
