@@ -14,3 +14,26 @@ __Zhipeng Guo, Xiaoyuan Yi, Maosong Sun, Wenhao Li, Cheng Yang, Jiannan Liang, H
 *ACL'19*
 
 >[Linke of Paper](https://www.aclweb.org/anthology/papers/P/P19/P19-3005/)
+
+# Motivations
+- Most existing systems are merely **model-oriented**, which input some user-specified keywords and directly complete the generation proess in one pass, with little user participation.
+- Most existing systems generate poetry in fewer styles and genres, and proviede limited options for users.
+
+# Contributions
+- **Multi-modal input**, such as keywords, plain text and images.
+- **Various styles and genres**.
+- **Human-machine collaboration**.
+
+# Architecture
+## Overview
+
+![img](/assets/images/post/2019-08-12/002.png)  
+
+**Four modules:**
+- input preprocessing
+- generation
+- postprocessing
+- collaborative revision
+
+**Processing:**
+Given the user-specified genre, style and inputs, the preprocessing module extractes several keywords from the inputs and then conducts keyword expansion to introduce richer information. With these preprocessed keywords, the generation module generates a poem draft. The postprocessing module re-ranks the candidates of each line and removes the ones that do not conform to structural and phonological requirements. At last, the collaborative revision module interacts with the user and dynamically updates the draft for several times according to the user's revision, to collaboratively create a satisfying poem.
