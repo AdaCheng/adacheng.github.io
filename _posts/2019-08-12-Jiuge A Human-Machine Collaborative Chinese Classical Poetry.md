@@ -81,7 +81,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
     \end{equation}
     $$
     
-    where $tf_{wiki}(w_j|w_i)$ is the term frequency of $w_j$ in the Wikipedia article of $w_i$, $df(w_j)$ is the number of Wikipedia articles containing $w_j$, $N$ is the number of Wikipedia articles, and $p(w_j)$ is the word frequency counted in all articles.
+    where $tf_{wiki}\left(w_j | w_i\right)$ is the term frequency of $w_j$ in the Wikipedia article of $w_i$, $df(w_j)$ is the number of Wikipedia articles containing $w_j$, $N$ is the number of Wikipedia articles, and $p(w_j)$ is the word frequency counted in all articles.
 
 - **Example:**
     ![img](/assets/images/post/2019-08-12/003.png)  
