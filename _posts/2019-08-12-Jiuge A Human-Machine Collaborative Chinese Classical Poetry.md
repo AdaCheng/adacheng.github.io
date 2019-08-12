@@ -42,15 +42,15 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 ### Keyword Extraction
 - For plain text
 
-1. Use (THULAC)[http://thulac.thunlp.org/] to conduct Chinese word segmentation;
-2. compute the importance $r(w)$ of each word $w$:  
+    1.Use (THULAC)[http://thulac.thunlp.org/] to conduct Chinese word segmentation;
+    2.compute the importance $r(w)$ of each word $w$:  
 
-$$
-\begin{equation}
-r(w)=[\alpha * ti(w)+(1-\alpha) * tr(w)]
-\end{equation}
-$$
+    $$
+    \begin{equation}
+    r(w)=[\alpha * ti(w)+(1-\alpha) * tr(w)]
+    \end{equation}
+    $$
 
-where $ti(w)$ and $tr(w)$ are the TF-IDF value and TextRank score,$\alpha$ is a hyper-parameter to balance the weights of $ti(w)$ and $tr(w)$.
+    where $ti(w)$ and $tr(w)$ are the TF-IDF value and TextRank score,$\alpha$ is a hyper-parameter to balance the weights of $ti(w)$ and $tr(w)$.
 
-3. Select top K words with the highest scores.
+    3.Select top K words with the highest scores.
