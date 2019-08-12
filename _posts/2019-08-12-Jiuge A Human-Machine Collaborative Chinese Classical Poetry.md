@@ -111,3 +111,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 - **Example:**
 
     ![img](/assets/images/post/2019-08-12/004.png) 
+
+## Generation Module
+
+![img](/assets/images/post/2019-08-12/005.png) 
