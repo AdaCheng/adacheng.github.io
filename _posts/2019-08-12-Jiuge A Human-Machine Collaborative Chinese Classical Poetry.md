@@ -156,6 +156,24 @@ $$
 
 where $\sigma$ defines a non-linear layer and $\mathbf{0}$ is a vector with all 0-s.
 
+### <span id='AF'>Addressing Function</span>
+
+Defining an Addressing Function, $\alpha=A(\tilde{M}, q)$, which calculates the probabilities that each slot of the memory is to be selected and operated.
+
+$$
+\begin{equation}
+z_{k}=b^{T} \sigma(\tilde{M}[k], q)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\alpha[k]=\operatorname{softmax}\left(z_{k}\right)
+\end{equation}
+$$
+
+where $q$ is the query vector, $b$ is the parameter, $\tilde{M}$ is the memory to be addressed, $\tilde{M}[k]$ is the k-th slot of $\tilde{M}$ and $\alpha[k]$ is the k-th element in vector $\alpha$.
+
 ### Memory Writing
 
 Before the generation, all memory slots are initialized with 0.
@@ -168,7 +186,7 @@ Before the generation, all memory slots are initialized with 0.
 
     ![img](/assets/images/post/2019-08-12/008.png)
 
-- For history memory, select a slot by writing addressing function and fill encoder state $h_t$ of $L_{i-2}$ into it.
+- For history memory, select a slot by writing [addressing function](#AF) and fill encoder state $h_t$ of $L_{i-2}$ into it.
 
     ![img](/assets/images/post/2019-08-12/009.png)
 
