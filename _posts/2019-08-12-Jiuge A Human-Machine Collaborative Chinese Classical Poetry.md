@@ -136,11 +136,11 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
 where $K_1$, $K_2$ and $K_3$ are the numbers of slots and $d_h$ is slot size.
 
-### Encoder & Decoder
+### Encoder
 
-Use **GRU** for decoder and bidirectional encoder.
+Use **GRU** for bidirectional encoder.
 
-Denote $X$ a line in encoder ($L_{i-1}$), $X=\left(x_{1} x_{2} \ldots x_{T_{e n c}}\right)$, and $Y$ a generated line in decoder ($L_i$), $Y=\left(y_{1} y_{2} \ldots y_{T_{d e c}}\right)$. $h_t$ and $s_t$ represent the encoder and decoder hidden states respectively.
+Denote $X$ a line in encoder ($L_{i-1}$), $X=\left(x_{1} x_{2} \ldots x_{T_{e n c}}\right)$, and $h_t$ represent the encoder hidden states.
 
 ### <span id='GTV'>Global Trace Vector</span>
 
@@ -226,7 +226,7 @@ Before the generation, all memory slots are initialized with 0.
 
     If there is no need to write $h_t$ into history memory, model learns to write it into the null slot, which wil be ignored.
 
-### Memory Reading
+### <span id='MR'>Memory Reading</span>
 
 ![img](/assets/images/post/2019-08-12/011.png)
 
@@ -242,4 +242,24 @@ o_{t}=\sum_{k=1}^{K} \alpha_{r}[k] * M[k]
 \end{equation}
 $$
 
-where $\alpha_r$ is the reading probability vector and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content. Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
+where $\alpha_r$ is the reading probability vector, $s_{t-1}$ is the [decoder hidden states](#Decoder) and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content. Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
+
+### <span id='Decoder'>Decoder</span>
+
+Denote $Y$ a generated line in decoder ($L_i$), $Y=\left(y_{1} y_{2} \ldots y_{T_{d e c}}\right)$, and $s_t$ represent the decoder hidden states. $e(y_t)$ is the word embedding of $y_t$.
+
+![img](/assets/images/post/2019-08-12/012.png)
+
+$$
+\begin{equation}
+s_{t}=G R U\left(s_{t-1},\left[e\left(y_{t-1}\right) ; o_{t} ; g_{t} ; v_{i-1}\right]\right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+p\left(y_{t} | y_{1 : t-1}, L_{1 : i-1}, w_{1 : K_{1}}\right)=\operatorname{softmax}\left(W s_{t}\right)
+\end{equation}
+$$
+
+where $o_t$ is the [memory output](#MR) and $W$ is the projection parameter. $v_{i-1}$ is a [global trace vector](#GTV).
