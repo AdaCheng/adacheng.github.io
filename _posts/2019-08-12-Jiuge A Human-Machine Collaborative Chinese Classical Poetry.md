@@ -112,8 +112,7 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
     ![img](/assets/images/post/2019-08-12/004.png) 
 
-## Generation Module
-
+## Generation Module - Core Component
 
 >Reference:  
 >[Chinese Poetry Generation with a Working Memory Model](https://arxiv.org/abs/1809.04306)  
@@ -298,3 +297,14 @@ p\left(y_{t} | y_{1 : t-1}, L_{1 : i-1}, w_{1 : K_{1}}\right)=\operatorname{soft
 $$
 
 where $g_t$ is a special [genre embedding](#GE), $o_t$ is the [memory output](#MR) and $W$ is the projection parameter. $v_{i-1}$ is a [global trace vector](#GTV).
+
+## Generation Module - Unsupervised Style Control
+
+>Reference:  
+>[Stylistic Chinese Poetry Generation via Unsupervised Style Disentanglement](https://www.aclweb.org/anthology/papers/D/D18/D18-1430/)  
+>__Cheng Yang, Maosong Sun, Xiaoyuan Yi, Wenhao Li__   
+>*Tsinghua University*  
+>*EMNLP'18*  
+>![img](/assets/images/post/2019-08-12/014.png) 
+
+### Overview
