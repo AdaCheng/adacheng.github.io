@@ -227,3 +227,19 @@ Before the generation, all memory slots are initialized with 0.
     If there is no need to write $h_t$ into history memory, model learns to write it into the null slot, which wil be ignored.
 
 ### Memory Reading
+
+![img](/assets/images/post/2019-08-12/011.png)
+
+$$
+\begin{equation}
+\alpha_{r}=A_{r}\left(M,\left[s_{t-1} ; v_{i-1}\right]\right)
+\end{equation}
+$$
+
+$$
+\begin{equation}
+o_{t}=\sum_{k=1}^{K} \alpha_{r}[k] * M[k]
+\end{equation}
+$$
+
+where $\alpha_r$ is the reading probability vector and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content. Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
