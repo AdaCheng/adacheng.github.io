@@ -242,7 +242,7 @@ o_{t}=\sum_{k=1}^{K} \alpha_{r}[k] * M[k]
 \end{equation}
 $$
 
-where $\alpha_r$ is the reading probability vector, $s_{t-1}$ is the [decoder hidden states](#Decoder) and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content, $\a_{i-1}$ is the [topic trace vector](#TT). Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
+where $\alpha_r$ is the reading probability vector, $s_{t-1}$ is the [decoder hidden states](#Decoder) and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content, $a_{i-1}$ is the [topic trace vector](#TT). Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
 
 ### <span id='TT'>Topic Trace Mechanism</span>
 
