@@ -136,9 +136,29 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 
 where $K_1$, $K_2$ and $K_3$ are the numbers of slots and $d_h$ is slot size.
 
+### Encoder & Decoder
+
+Use **GRU** for decoder and bidirectional encoder.
+
+Denote $X$ a line in encoder ($L_{i-1}$), $X=\left(x_{1} x_{2} \ldots x_{T_{e n c}}\right)$, and $Y$ a generated line in decoder ($L_i$), $Y=\left(y_{1} y_{2} \ldots y_{T_{d e c}}\right)$. $h_t$ and $s_t$ represent the encoder and decoder hidden states respectively.
+
+### Global Trace Vector
+
+$v_{i}$ is a global trace vector, which records what has been generated so far and provides implicit global information for the model. Once $L_i$ is generated, it is updated by a simple vanilla RNN.
+
+![img](/assets/images/post/2019-08-12/010.png) 
+
+$$
+\begin{equation}
+v_{i}=\sigma\left(v_{i-1}, \frac{1}{T_{e n c}} \sum_{t=1}^{T_{e n c}} h_{t}\right), v_{0}=\mathbf{0}
+\end{equation}
+$$
+
+where $\sigma$ defines a non-linear layer and $\mathbf{0}$ is a vector with all 0-s.
+
 ### Memory Writing
 
-Use GRU for decoder and bidirectional encoder. Before the generation, all memory slots are initialized with 0.
+Before the generation, all memory slots are initialized with 0.
 
 - For topic memory, feed characters of each topic word $w_k$ into the encoder, then fill each topic vector into a slot.
 
@@ -158,13 +178,8 @@ Use GRU for decoder and bidirectional encoder. Before the generation, all memory
     \end{equation}
     $$
 
-    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot, $v_{i-1}$ is a global trace vector, which records what has been generated so far and provides implicit global information for the model. Once $L_i$ is generated, it is updated by a simple vanilla RNN.
+    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot.
 
-    $$
-    \begin{equation}
-    v_{i}=\sigma\left(v_{i-1}, \frac{1}{T_{e n c}} \sum_{t=1}^{T_{e n c}} h_{t}\right), v_{0}=\mathbf{0}
-    \end{equation}
-    $$
     For testing (non-differentiable),
 
     $$
