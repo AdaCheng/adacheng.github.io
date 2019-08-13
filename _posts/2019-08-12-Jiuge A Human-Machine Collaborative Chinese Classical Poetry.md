@@ -122,4 +122,58 @@ Given the user-specified genre, style and inputs, the preprocessing module extra
 >*IJCAI'18*  
 >![img](/assets/images/post/2019-08-12/006.png) 
 
+### Overview
+
 ![img](/assets/images/post/2019-08-12/005.png) 
+
+**Three modules:**
+- topic memory $M_{1} \in \mathbb{R}^{K_{1} * d_{h}}$
+    + Each topic word $w_k$ is written into the topic memory in advance, which acts as the 'major message' and remains unchanged during the generation process of a poem.
+- history memory $M_{2} \in \mathbb{R}^{K_{2} * d_{h}}$
+    + Each character of $L_{i-1}$ is written into the local memory to provide full short-distance history.
+- local memory $M_{3} \in \mathbb{R}^{K_{3} * d_{h}}$
+    + Select some salient characters of $L_{i-2}$ to write into the history memory which maintains informative partial long-distance history.
+
+where $K_1$, $K_2$ and $K_3$ are the numbers of slots and $d_h$ is slot size.
+
+### Memory Writing
+
+Use GRU for decoder and bidirectional encoder. Before the generation, all memory slots are initialized with 0.
+
+- For topic memory, feed characters of each topic word $w_k$ into the encoder, then fill each topic vector into a slot.
+- For local memory, fill the encoder hidden states of characters in $L_{i-1}$ in.
+- For history memory, select a slot by writing addressing function and fill encoder state $h_t$ of $L_{i-2}$ into it.
+
+    $$
+    \begin{equation}
+    \alpha_{w}=A_{w}\left(\tilde{M}_{2},\left[h_{t} ; v_{i-1}\right]\right)
+    \end{equation}
+    $$
+
+    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot.
+
+    For testing (non-differentiable),
+
+    $$
+    \begin{equation}
+    \beta[k]=I\left(k=\arg \max _{j} \alpha_{w}[j]\right)
+    \end{equation}
+    $$
+
+    where $I$ is an indicator function.
+
+    For training, simply approximate $\beta$ as,
+
+    $$
+    \begin{equation}
+    \beta=\tanh \left(\gamma *\left(\alpha_{w}-\mathbf{1} * \max \left(\alpha_{w}\right)\right)\right)+\mathbf{1}
+    \end{equation}
+    $$
+
+    where $\mathbf{1}$ is a vector with all 1-s and $\gamma$ is a large positive number.
+
+    $$
+    \begin{equation}
+    \tilde{M}_{2}[k] \leftarrow(1-\beta[k]) * \tilde{M}_{2}[k]+\beta[k] * h_{t}
+    \end{equation}
+    $$
