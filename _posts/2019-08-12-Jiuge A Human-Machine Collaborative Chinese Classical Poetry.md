@@ -226,6 +226,34 @@ Before the generation, all memory slots are initialized with 0.
 
     If there is no need to write $h_t$ into history memory, model learns to write it into the null slot, which wil be ignored.
 
+### Topic Trace Mechanism
+
+**Problem:** A global trace vector $v_i$ is not enough to help the model remember whether each topic has been used or not.
+
+**Solutions:** Design a **Topic Trace (TT)** mechanism to record the usage of topics in a more explicit way.
+
+![img](/assets/images/post/2019-08-12/013.png)
+
+$$
+\begin{equation}
+c_{i}=\sigma\left(c_{i-1}, \frac{1}{K_{1}} \sum_{k=1}^{K_{1}} M[k] * \alpha_{r}[k]\right), c_{0}=\mathbf{0}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+u_{i}=u_{i-1}+\alpha_{r}\left[1 : K_{1}\right], u_{i} \in \mathbb{R}^{K_{1} * 1}, u_{0}=\mathbf{0}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+a_{i}=\left[c_{i} ; u_{i}\right]
+\end{equation}
+$$
+
+$c_i$ maintains the content of used topics and $u_i$ explicitly records the times of reading each topic. $a_i$ is the topic trace vector.
+
 ### <span id='MR'>Memory Reading</span>
 
 ![img](/assets/images/post/2019-08-12/011.png)
@@ -270,11 +298,3 @@ p\left(y_{t} | y_{1 : t-1}, L_{1 : i-1}, w_{1 : K_{1}}\right)=\operatorname{soft
 $$
 
 where $g_t$ is a special [genre embedding](#GE), $o_t$ is the [memory output](#MR) and $W$ is the projection parameter. $v_{i-1}$ is a [global trace vector](#GTV).
-
-### Topic Trace Mechanism
-
-**Problem:** A global trace vector $v_i$ is not enough to help the model remember whether each topic has been used or not.
-
-**Solutions:** Design a **Topic Trace (TT)** mechanism to record the usage of topics in a more explicit way.
-
-![img](/assets/images/post/2019-08-12/013.png)
