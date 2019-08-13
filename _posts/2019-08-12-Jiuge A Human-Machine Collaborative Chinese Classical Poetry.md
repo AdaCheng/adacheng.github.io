@@ -145,6 +145,9 @@ Use GRU for decoder and bidirectional encoder. Before the generation, all memory
     ![img](/assets/images/post/2019-08-12/007.png) 
 
 - For local memory, fill the encoder hidden states of characters in $L_{i-1}$ in.
+
+    ![img](/assets/images/post/2019-08-12/008.png)
+ 
 - For history memory, select a slot by writing addressing function and fill encoder state $h_t$ of $L_{i-2}$ into it.
 
     $$
