@@ -196,7 +196,7 @@ Before the generation, all memory slots are initialized with 0.
     \end{equation}
     $$
 
-    where $\alpha_w$ is the writing probabilities vector, $$\widetilde{M}_2$$ is the concatenation of history memory $M_2$ and a null slot, $v_{i-1}$ is [global trace vector](#GTV).
+    where $\alpha_w$ is the writing probabilities vector, $$\tilde{M}_{2}$$ is the concatenation of history memory $M_2$ and a null slot, $v_{i-1}$ is [global trace vector](#GTV).
 
     For testing (non-differentiable),
 
