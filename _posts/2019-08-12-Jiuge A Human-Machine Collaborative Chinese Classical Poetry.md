@@ -142,7 +142,7 @@ Use **GRU** for decoder and bidirectional encoder.
 
 Denote $X$ a line in encoder ($L_{i-1}$), $X=\left(x_{1} x_{2} \ldots x_{T_{e n c}}\right)$, and $Y$ a generated line in decoder ($L_i$), $Y=\left(y_{1} y_{2} \ldots y_{T_{d e c}}\right)$. $h_t$ and $s_t$ represent the encoder and decoder hidden states respectively.
 
-### Global Trace Vector
+### <span id='GTV'>Global Trace Vector</span>
 
 $v_{i}$ is a global trace vector, which records what has been generated so far and provides implicit global information for the model. Once $L_i$ is generated, it is updated by a simple vanilla RNN.
 
@@ -178,7 +178,7 @@ Before the generation, all memory slots are initialized with 0.
     \end{equation}
     $$
 
-    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot.
+    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot, $v_{i-1}$ is [global trace vector](#GTV).
 
     For testing (non-differentiable),
 
@@ -207,3 +207,5 @@ Before the generation, all memory slots are initialized with 0.
     $$
 
     If there is no need to write $h_t$ into history memory, model learns to write it into the null slot, which wil be ignored.
+
+### Memory Reading
