@@ -141,6 +141,9 @@ where $K_1$, $K_2$ and $K_3$ are the numbers of slots and $d_h$ is slot size.
 Use GRU for decoder and bidirectional encoder. Before the generation, all memory slots are initialized with 0.
 
 - For topic memory, feed characters of each topic word $w_k$ into the encoder, then fill each topic vector into a slot.
+
+    ![img](/assets/images/post/2019-08-12/007.png) 
+
 - For local memory, fill the encoder hidden states of characters in $L_{i-1}$ in.
 - For history memory, select a slot by writing addressing function and fill encoder state $h_t$ of $L_{i-2}$ into it.
 
@@ -177,3 +180,5 @@ Use GRU for decoder and bidirectional encoder. Before the generation, all memory
     \tilde{M}_{2}[k] \leftarrow(1-\beta[k]) * \tilde{M}_{2}[k]+\beta[k] * h_{t}
     \end{equation}
     $$
+
+    If there is no need to write $h_t$ into history memory, model learns to write it into the null slot, which wil be ignored.
