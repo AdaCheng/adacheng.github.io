@@ -244,6 +244,13 @@ $$
 
 where $\alpha_r$ is the reading probability vector, $s_{t-1}$ is the [decoder hidden states](#Decoder) and the [trace vector](#GTV) $v_{i-1}$ is used to help the [Addressing Function](#AF) avoid reading redundant content. Joint reading from the three memory modules enables the model to flexibly decide to express a topic or to continue the history content.
 
+### <span id='GE'>Genre embedding</span>
+
+$g_t$ is the concatenation of a phonology embedding and a length embedding, which are learned during training.
+
+- The phonology embedding indicates the required category of $y_t$.
+- The length embedding indicates the number of characters to be generated after $y_t$ in $L_i$ and hence controls the length of $L_i$.
+
 ### <span id='Decoder'>Decoder</span>
 
 Denote $Y$ a generated line in decoder ($L_i$), $Y=\left(y_{1} y_{2} \ldots y_{T_{d e c}}\right)$, and $s_t$ represent the decoder hidden states. $e(y_t)$ is the word embedding of $y_t$.
@@ -262,4 +269,12 @@ p\left(y_{t} | y_{1 : t-1}, L_{1 : i-1}, w_{1 : K_{1}}\right)=\operatorname{soft
 \end{equation}
 $$
 
-where $o_t$ is the [memory output](#MR) and $W$ is the projection parameter. $v_{i-1}$ is a [global trace vector](#GTV).
+where $g_t$ is a special [genre embedding](#GE), $o_t$ is the [memory output](#MR) and $W$ is the projection parameter. $v_{i-1}$ is a [global trace vector](#GTV).
+
+### Topic Trace Mechanism
+
+**Problem:** A global trace vector $v_i$ is not enough to help the model remember whether each topic has been used or not.
+
+**Solutions:** Design a **Topic Trace (TT)** mechanism to record the usage of topics in a more explicit way.
+
+![img](/assets/images/post/2019-08-12/013.png)
