@@ -158,8 +158,13 @@ Use GRU for decoder and bidirectional encoder. Before the generation, all memory
     \end{equation}
     $$
 
-    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot.
+    where $\alpha_w$ is the writing probabilities vector, $\tilde{M}_{2}$ is the concatenation of history memory $M_2$ and a null slot, $v_{i-1}$ is a global trace vector, which records what has been generated so far and provides implicit global information for the model. Once $L_i$ is generated, it is updated by a simple vanilla RNN.
 
+    $$
+    \begin{equation}
+    v_{i}=\sigma\left(v_{i-1}, \frac{1}{T_{e n c}} \sum_{t=1}^{T_{e n c}} h_{t}\right), v_{0}=\mathbf{0}
+    \end{equation}
+    $$
     For testing (non-differentiable),
 
     $$
