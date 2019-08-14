@@ -333,3 +333,18 @@ $$
 >![img](/assets/images/post/2019-08-12/017.png) 
 
 ![img](/assets/images/post/2019-08-12/016.png)
+
+- The encoder uses bidirectional LSTM model to project the input sentence $X$ into the vector space.
+    Formally, the hidden state of LSTM are computed by
+
+    $$
+    \begin{equation}
+    \overrightarrow{h_{i}}=L S T M_{\text {forward}}\left(\overrightarrow{h_{i-1}}, e\left(x_{i}\right)\right)
+    \end{equation}
+    $$
+
+    $$
+    \begin{equation}
+    \overleftarrow h_{i}=L S T M_{b a c k w a r d}\left(\overleftarrow h_{i+1}, e\left(x_{i}\right)\right)
+    \end{equation}   
+    $$
