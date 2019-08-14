@@ -378,3 +378,11 @@ $$
     p\left(y_{i} | y_{1} y_{2} \ldots y_{i-1}, X\right)=g\left(y_{i} | s_{i}\right)
     \end{equation}
     $$
+
+### Decoder Model with Style Disentanglement
+
+**Problem:**When the input style id is changed, the output sentence would probably be the same because no supervised loss is given to force the output sentences to follow the one hot style representation.
+
+**Solution:**  
+
+Concatenate the one-hot representation of style id $one_hot(k)$ and the embedding vector $h_T$ obtained y bi-LSTM encoder and then feed $\left[\text { one }_{-} h o t(k), h_{T}\right]$ into the decoder model.
