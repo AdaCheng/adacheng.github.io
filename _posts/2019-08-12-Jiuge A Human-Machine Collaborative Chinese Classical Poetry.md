@@ -351,7 +351,7 @@ $$
 
     for $i=1,2 \ldots T$ where $$\overrightarrow{h_{i}}$$ and $$\overleftarrow h_{i}$$ are the i-th hidden state of forward and backward LSTM respectively, $$e\left(x_{i}\right) \in \mathcal{R}^{d}$$ is the character emebedding of character $x_i$ and $d$ is the dimension of character embeddings.
 
-- Concatenate corresponding hidden states of forward and backward LSTM $$h_{i}=\left[\vec{h}_{i}, \overleftarrow h_{T-i+1}\right]$$ as the i-th hidden state of bi-LSTM.
+- Concatenate corresponding hidden states of forward and backward LSTM $$h_{i}=\left[\vec{h}_{i}, \overleftarrow h_{i}\right]$$ as the i-th hidden state of bi-LSTM.
 
 - The decoder module contains an LSTM decoder with attention mechanism, which computes a context vector as a weighted sum of all encoder hidden states to represent the most relevant information at each stage.
 
