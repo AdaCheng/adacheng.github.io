@@ -330,6 +330,6 @@ $$
 >__Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio__   
 >*Jacobs University, Universite de Montr´eal*  
 >*ICLR'15*  
->![img](/assets/images/post/2019-08-12/016.png) 
+>![img](/assets/images/post/2019-08-12/017.png) 
 
-![img](/assets/images/post/2019-08-12/017.png)
+![img](/assets/images/post/2019-08-12/016.png)
