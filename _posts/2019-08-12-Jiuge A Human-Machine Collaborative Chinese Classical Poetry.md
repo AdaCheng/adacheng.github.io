@@ -308,3 +308,28 @@ where $g_t$ is a special [genre embedding](#GE), $o_t$ is the [memory output](#M
 >![img](/assets/images/post/2019-08-12/014.png) 
 
 ### Overview
+
+Take two arguments as input: input sentence $s_{input}$ and style id $k \in 1,2 \ldots K$ where $K$ is the total number of different styles. Then enumerate each style id $k$ and generate style-specific output sentence $s^{k}_{output}$ respecitively.
+
+![img](/assets/images/post/2019-08-12/015.png)
+
+### Mutual Information
+
+Given two random variables $X$ and $Y$, the mutual information $I(X, Y)$ measures "the amount of information" obtained about one random variable given another one. Mutual information can also be interpreted as a measurement about how similar the joint probability distribution $p(X, Y)$ is to the product of marginal distributions $p(X)p(Y)$.
+
+$$
+\begin{equation}
+I(X, Y)=\int_{Y} \int_{X} p(X, Y) \log \frac{p(X, Y)}{p(X) p(Y)} d X d Y
+\end{equation}
+$$
+
+### Attention Mechanism
+
+>Reference:  
+>[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473v2)  
+>__Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio__   
+>*Jacobs University, Universite de Montr´eal*  
+>*ICLR'15*  
+>![img](/assets/images/post/2019-08-12/016.png) 
+
+![img](/assets/images/post/2019-08-12/017.png)
