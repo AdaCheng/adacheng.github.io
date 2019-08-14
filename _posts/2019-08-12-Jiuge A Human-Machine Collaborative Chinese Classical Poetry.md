@@ -335,7 +335,7 @@ $$
 ![img](/assets/images/post/2019-08-12/016.png)
 
 - The encoder uses bidirectional LSTM model to project the input sentence $X$ into the vector space.
-- the hidden state of LSTM are computed by
+- The hidden state of LSTM are computed by
 
     $$
     \begin{equation}
@@ -350,3 +350,31 @@ $$
     $$
 
     for $i=1,2 \ldots T$ where $$\overrightarrow{h_{i}}$$ and $$\overleftarrow h_{i}$$ are the i-th hidden state of forward and backward LSTM respectively, $$e\left(x_{i}\right) \in \mathcal{R}^{d}$$ is the character emebedding of character $x_i$ and $d$ is the dimension of character embeddings.
+
+- Concatenate corresponding hidden states of forward and backward LSTM $$h_{i}=\left[\vec{h}_{i}, \overleftarrow h_{T-i+1}\right]$$ as the i-th hidden state of bi-LSTM.
+
+- The decoder module contains an LSTM decoder with attention mechanism, which computes a context vector as a weighted sum of all encoder hidden states to represent the most relevant information at each stage.
+
+- The i-th hidden state in the decoder LSTM
+
+    $$
+    \begin{equation}
+    s_{i}=L S T M_{d e c o d e r}\left(s_{i-1},\left[e\left(y_{i-1}\right), a_{i}\right]\right)
+    \end{equation}
+    $$
+
+    for $i=2, \ldots T$ and $s_{1}=h_{T}$, where $[ ]$ indicates concatenation operation, $e\left(y_{i-1}\right)$ is character embedding of $y_{i-1}$ and $a_i$ is the context vector learned by attention mechanism.
+
+    $$
+    \begin{equation}
+    a_{i}=\operatorname{attention}\left(s_{i-1}, h_{1 : T}\right)
+    \end{equation}
+    $$
+
+- The character probability distribution when decoding the i-th character can be expressed as 
+
+    $$
+    \begin{equation}
+    p\left(y_{i} | y_{1} y_{2} \ldots y_{i-1}, X\right)=g\left(y_{i} | s_{i}\right)
+    \end{equation}
+    $$
