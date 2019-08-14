@@ -384,5 +384,8 @@ $$
 **Problem:**When the input style id is changed, the output sentence would probably be the same because no supervised loss is given to force the output sentences to follow the one hot style representation.
 
 **Solution:**  
+Add a regularization term to force a strong dependency relationship between the input style id and generated sentence.
 
-Concatenate the one-hot representation of style id $one_hot(k)$ and the embedding vector $h_T$ obtained y bi-LSTM encoder and then feed $\left[\text { one }_{-} h o t(k), h_{T}\right]$ into the decoder model.
+- Concatenate the one-hot representation of style id $one_hot(k)$ and the embedding vector $h_T$ obtained y bi-LSTM encoder and then feed $$\left[\text { one }_{-} h o t(k), h_{T}\right]$$ into the decoder model.
+
+- Assume the input style id is a uniformly distributed random variable $S_{ty}$ and $$\operatorname{Pr}(S t y=k)=\frac{1}{K}$$ for $k = 1, 2, \ldots K$ where $K$ is the total number of styles.
