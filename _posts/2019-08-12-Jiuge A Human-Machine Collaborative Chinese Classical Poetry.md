@@ -631,5 +631,3 @@ The collaborative creation page: an example of revision.
 
 ![img](/assets/images/post/2019-08-12/019.png)
 
-# Questions
-
