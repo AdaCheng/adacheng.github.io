@@ -384,7 +384,7 @@ $$
 **Problem:**When the input style id is changed, the output sentence would probably be the same because no supervised loss is given to force the output sentences to follow the one hot style representation.
 
 **Solution:**  
-Add a regularization term to force a strong dependency relationship between the input style id and generated sentence.
+Add a **regularization term** to force a strong dependency relationship between the input style id and generated sentence.
 
 - Concatenate the one-hot representation of style id $one_hot(k)$ and the embedding vector $h_T$ obtained y bi-LSTM encoder and then feed $$\left[\text { one }_{-} h o t(k), h_{T}\right]$$ into the decoder model.
 
@@ -407,3 +407,62 @@ Add a regularization term to force a strong dependency relationship between the 
     $$
 
     Here $K L(\operatorname{Pr}(\cdot) \| Q(\cdot))$ indicates the KLdivergence distance between probability distribution $\operatorname{Pr}(\cdot)$ and $Q(\cdot)$. The inequality comes from the fact that the KL-divergence is always no less that zero and is tight when $Pr(\cdot) = Q(\cdot)$.
+
+- Employ neural network to parametrize the **posterior distribution estimation** function $Q$. 
+    + Compute the average character embedding of sequence $Y$ and then use a linear projection with softmax normalizer to get the style distribution.
+
+    $$
+    \begin{equation}
+    Q(S t y | Y)=\operatorname{softmax}\left(W \cdot \frac{1}{T} \sum_{i=1}^{T} e\left(y_{i}\right)\right)
+    \end{equation}
+    $$
+
+    where $W \in \mathcal{R}^{K \times d}$ is the linear projection matrix.
+
+### Expected Character Embedding
+
+**Problem:** The search space of sequence $Y$ is exponential to the size of vocabulary. Hence it's impossible to enumerate all possible sequence $Y$ for computing the integration $Y \|k; X$.
+
+**Solution:** 
+
+- Use **Expected character embedding** to approximate the probabilistic space of output sequences: only generate an expected embedding sequence and suppose $Y \|k; X$ has one hundred percent probability generating this one.
+
+    $$
+    \begin{equation}
+    \operatorname{expect}(i ; k, X)=\sum_{c \in V} g\left(c | s_{i}\right) e(c)
+    \end{equation}
+    $$
+
+    where $$ \text {expect }(i ; k, X) \in \mathcal{R}^{d} $$ represents the expected character embedding at i-th output given style id $k$ and input sequence $X$ and $c \in V$ enumerates all characters in the vocabulary.
+
+- Feed $$ \text {expect }(i ; k, X)$$ into the LSTM in decoder to update the hidden state for generating next expected character embedding:
+
+    $$
+    \begin{equation}
+    s_{i+1}=L S T M_{d e c o d e r}\left(s_{i},\left[\text {expect}(i ; k, X), a_{i+1}\right]\right)
+    \end{equation}
+    $$
+
+- Use the expected embeddings $\operatorname{expect}(i ; k, X)$ for $i = 1, 2 \cdot T$ as an approximation of the whole probability space of $Y \| k; X$. The lower bound can be rewritten as
+
+    $$
+    \begin{equation}
+    \mathcal{L}_{r e g}=\frac{1}{K} \sum_{k=1}^{K} \log \left\{\operatorname{softmax}\left(W \cdot \frac{1}{T} \sum_{i=1}^{T} \operatorname{expect}(i ; k, X)\right)[k]\right\}
+    \end{equation}
+    $$
+
+    where $x[j]$ represents the j-th dimension of vector $x$.
+
+- Add the lower bound $\mathcal{L}_{r e g}$ to the overall training objective as a regularization term. For each training pair $(X, Y)$, we aim to maximize
+
+    $$
+    \begin{equation}
+    \operatorname{Tr} \operatorname{ain}(X, Y)=\sum_{i=1}^{T} \log p\left(y_{i} | y_{1} y_{2} \ldots y_{i-1}, X\right)+\lambda \mathcal{L}_{r e g}
+    \end{equation}
+    $$
+
+    where $p\left(y_{i} | y_{1} y_{2} \ldots y_{i-1}, X\right)$ is style irrelevant generation likelihood and  computed by setting one-hot style representation to an all-zero vector, and $\lambda$ is a harmonic hyperparameter to balance the log-likelihood of generating sequence $Y$ and the lower bound of mutual information.
+
+    The first term ensures that the decoder can generate fluent and coherent outputs and the second term guaran tees the style-specific output has a strong depen dency on the one-hot style representation input.
+
+    
