@@ -509,7 +509,83 @@ Jiuge takes a line-to-line generation schema and generates each line with beam s
 
 **Problem:** The best candidate may not be ranked as the top 1 because the training objective is Maximum Likelihood Estimation (MLE), which tends to give the generic and meaningless candidates lower costs.
 
-**Solution:** 
+**Solution:** Adopt automatic rewarders, including a fluency rewarder, a context coherence rewarder, and a meaningfulness rewarder. Then the candidate with the highest weighted-average rewards given by them will be selected.
+
+#### Fluency Rewarder
+
+Use a neural language model to measure fluency.
+
+Given a poem line $L_i$, higher probability $P_{lm}(L_i)$ indicates the line is more likely to exist in the corpus and thus may be more fluent and well-formed. However, it's inadvisable to directly use $P_{lm}(L_i)$ as the reward, since over high probability may damage diversity and innovation.
+
+Define the fluency reward of a poem $\mathcal{P}$.
+
+\begin{equation}
+\begin{array}{l}{r\left(L_{i}\right)=\max \left(\left|P_{l m}\left(L_{i}\right)-\mu\right|-\delta_{1} * \sigma, 0\right)} \\ {R_{1}(\mathcal{P})=\frac{1}{n} \sum_{i=1}^{n} \exp \left(-r\left(L_{i}\right)\right)}\end{array}
+\end{equation}
+
+where $\mu$ and $\sigma$ are the mean value and standard deviation of $P_{lm}$ calculated over all training sets. $\delta_{1}$ is a hyper-parameter to control the range.
+
+#### Coherence Rewarder
+
+Use Mutual Information (MI) to measure the coherence of $L_i$ and $L_{1:i-1}$.
+
+MI of two sentences $S_1$ and $S_2$.
+
+$$
+\begin{equation}
+M I\left(S_{1}, S_{2}\right)=\log P\left(S_{2} | S_{1}\right)-\lambda \log P\left(S_{2}\right)
+\end{equation}
+$$
+
+where $\lambda$ is used to regulate the weight of generic sentences.
+
+The coherence reward.
+
+$$
+\begin{equation}
+\begin{aligned} M I\left(L_{1 : i-1}, L_{i}\right) &=\log P_{\text { seqaseq }}\left(L_{i} | L_{1 : i-1}\right) \\ &-\lambda \log P_{l m}\left(L_{i}\right) \\ R_{2}(\mathcal{P}) &=\frac{1}{n-1} \sum_{i=2}^{n} M I\left(L_{1 : i-1}, L_{i}\right) \end{aligned}
+\end{equation}
+$$
+
+where $P_{seq2seq}$ is a GRU-based sequence-to-sequence model.
+
+A better choice is to use a dynamic $\lambda$ instead of a static one.
+
+$$
+\begin{equation}
+\lambda=\exp \left(-r\left(L_{i}\right)\right)+1
+\end{equation}
+$$
+
+Which gives smaller weights to lines with extreme language model probabilities.
+
+#### Meaningfulness Rewarder
+
+**Problem:** The basic model tends to generate some common and meaningless words, such as *bu zhi* (don't know), *he chu* (where) and *wu ren*(no one).
+
+**Solution:**Utilize **TF-IDF** to motivate the model to generate more meanningful words.
+
+Direct use of TF-IDF leads to serious out-of-vocabulary (OOV) problem and high variance. Therefore use another neural network to smooth TF-IDF values.
+
+$$
+\begin{equation}
+R_{3}(\mathcal{P})=\frac{1}{n} \sum_{i=1}^{n} F\left(L_{i}\right)
+\end{equation}
+$$ 
+
+Where $F(L_i)$ is a neural network which takes a line as input and predicts its estimated TF-IDF value.
+
+For each line in training sets, we calculate standard TF-IDF values of all words and use the average as the line TF-IDF value. Then use them to train $F(L_i)$ with Huber loss.
+
+#### Total Reward
+
+$$
+\begin{equation}
+R(\mathcal{P})=\sum_{j=1}^{3} \alpha_{j} * \tilde{R}_{j}(\mathcal{P})
+\end{equation}
+$$
+
+Where $\alpha_{j}$ is the weight and the symbol $\tilde$ means the three rewards are re-scaled to the same magnitude.
 
 ## Collaborative Revision Module
 
