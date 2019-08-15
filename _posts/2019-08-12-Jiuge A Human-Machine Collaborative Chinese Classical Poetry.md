@@ -500,6 +500,13 @@ Jiuge takes a line-to-line generation schema and generates each line with beam s
 
 ### Re-Ranking
 
+>Reference:  
+>[Automatic Poetry Generation with Mutual Reinforcement Learning](https://aclweb.org/anthology/papers/D/D18/D18-1353/)  
+>__Xiaoyuan Yi, Maosong Sun, Ruoyu Li, Wenhao Li__   
+>*Tsinghua University*  
+>*EMNLP'18*  
+>![img](/assets/images/post/2019-08-12/020.png) 
+
 **Problem:** The best candidate may not be ranked as the top 1 because the training objective is Maximum Likelihood Estimation (MLE), which tends to give the generic and meaningless candidates lower costs.
 
 **Solution:** 
