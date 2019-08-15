@@ -381,6 +381,8 @@ $$
     \end{equation}
     $$
 
+> For details, you can read my another note [<Neural Machine Traslation By Jointly Learning To Align And Translate>](https://adacheng.github.io/paper_note/2019/06/13/Neural-Machine-Traslation-By-Jointly-Learning-To-Align-And-Translate/).
+
 ### Decoder Model with Style Disentanglement
 
 **Problem:**When the input style id is changed, the output sentence would probably be the same because no supervised loss is given to force the output sentences to follow the one hot style representation.
