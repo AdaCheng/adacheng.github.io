@@ -389,3 +389,19 @@ Add a regularization term to force a strong dependency relationship between the 
 - Concatenate the one-hot representation of style id $one_hot(k)$ and the embedding vector $h_T$ obtained y bi-LSTM encoder and then feed $$\left[\text { one }_{-} h o t(k), h_{T}\right]$$ into the decoder model.
 
 - Assume the input style id is a uniformly distributed random variable $S_{ty}$ and $$\operatorname{Pr}(S t y=k)=\frac{1}{K}$$ for $k = 1, 2, \ldots K$ where $K$ is the total number of styles.
+
+- Maximize the mutual information between the style distribution $Pr(S_{ty})$ and the generated sentence distribution $Pr(Y; X)$.
+
+    $$
+    \begin{equation}
+    \begin{aligned} & I(\operatorname{Pr}(\text {Sty}), \operatorname{Pr}(Y ; X)) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, \operatorname{St} y=k ; X)}{\operatorname{Pr}(\text {Sty}=k) \operatorname{Pr}(Y ; X)} d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, S t y=k ; X)}{\operatorname{Pr}(Y ; X)} d Y \\ &-\sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \log \operatorname{Pr}(\text {Sty}=k | Y ; X) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \operatorname{Pr}(\text {Sty}=k | Y) d Y+\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log P(\text {Sty}=k | Y) d Y+\log K \end{aligned}
+    \end{equation}
+    $$
+
+- But the posterior probability distribution $$\operatorname{Pr}(\text {Sty}=k | Y)$$ is unknown. With the help of variational inference maximazation, we can train a parameterized function $Q(S_{ty} =k | Y)$ which estimates the posterior distribution and maximize a lower bound of mutual information.
+
+    $$
+    \begin{equation}
+    \begin{aligned} & I(\operatorname{Pr}(S t y), \operatorname{Pr}(Y ; X))-\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \operatorname{Pr}(\text {Sty}=k | Y) d Y \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log Q(\text {Sty}=k | Y) d Y \\ &+\int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \frac{\operatorname{Pr}(\text {Sty}=k | Y)}{Q(\text {Sty}=k | Y)} d Y \end{aligned \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\ &+\int_{Y ; X} K L(\operatorname{Pr}(S \operatorname{ty} | Y), Q(S t y | Y)) d Y \\ \geq & \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(S t y=k) \int_{Y | k ; X} \log Q(S t y=k | Y) d Y \end{aligned}
+    \end{equation}
+    $$
