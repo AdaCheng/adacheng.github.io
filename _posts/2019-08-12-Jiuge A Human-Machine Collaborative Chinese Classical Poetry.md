@@ -381,7 +381,7 @@ $$
     \end{equation}
     $$
 
-> For details, you can read my another note [<Neural Machine Traslation By Jointly Learning To Align And Translate>](https://adacheng.github.io/paper_note/2019/06/13/Neural-Machine-Traslation-By-Jointly-Learning-To-Align-And-Translate/).
+> For details, you can read my another note [Neural Machine Traslation By Jointly Learning To Align And Translate](https://adacheng.github.io/paper_note/2019/06/13/Neural-Machine-Traslation-By-Jointly-Learning-To-Align-And-Translate/).
 
 ### Decoder Model with Style Disentanglement
 
