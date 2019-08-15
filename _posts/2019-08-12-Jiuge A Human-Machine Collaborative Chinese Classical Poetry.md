@@ -487,3 +487,63 @@ Given a sequence of words $seq = \left(x_{0,0}, x_{1,0}, \cdots, x_{n, 0}\right)
     where $p_{dec}$ and $p_{lm}$ are probability distributions of the decoder and a neural language model respectively.
 
 - If the length of the input sequence is less than $n$ (the number of lines in a poem), use the language model to extend it to $n$ words.
+
+## Postprocessing Module
+
+Jiuge takes a line-to-line generation schema and generates each line with beam search (beamsize=$B$). Design a postprocessing module to automatically check and re-rank these candidates, and then select the best one, which is used for the generation of subsequent lines in a poem.
+
+### Pattern Checking
+
+**Problem:** The genre embedding cannot guarantee that generated poems perfectly adhere to required patterns.
+
+**Solution:** Remove the invalid candidates according to the sepcified length, rhythm and rhyme.
+
+### Re-Ranking
+
+**Problem:** The best candidate may not be ranked as the top 1 because the training objective is Maximum Likelihood Estimation (MLE), which tends to give the generic and meaningless candidates lower costs.
+
+**Solution:** 
+
+## Collaborative Revision Module
+
+User may revise the draft for several times to collaboratively create a satisfying poem together with the machine.
+
+### Revision Modes
+
+**Processing:** Define a n-line poem draft as $X=\left(x_{1}, x_{2}, \cdots, x_{n}\right)$, and each line containing $l_i$ words as $x_{i}=\left(x_{i, 1}, x_{i, 2}, \dots, x_{i, l_{i}}\right)$. At every turn, the user can revise one word in the draft. The revision module returns the revision information to the generation module which updates the draft according to the revised word.
+
+**Three revision modes:**
+- Static updating mode
+    + The revision is required to meet the phonological pattern of the draft and the draft will not be updated except the revised word.
+- Local dynamic updating mode
+    +  If the user revises word $x_{i, j}, then Jiuge will re-generate the succeeding subsequence $x_{i, j+1}, \cdots, x_{i, l_{i}}$ in the i-th line by feeding the revised word to the decoder for the revised position.
+- Global dynamic updating mode
+    + If the user revises word $x_{i, j}$, Jiuge will re-generate all succeeding words $x_{i, j+1}, \cdots, x_{i, l_{i}}, \cdots, x_{n, l_{n}}$.
+
+### Automatic Reference Recommendation
+
+**Problem:**For poetry writing beginners or these lacking professional knowledge, it is hard to revise the draft appropriately.
+
+**Solution:**Searches several human-authored poems, which are semantically similar to the generated draft, for the user as references. The user could decide how to make revision with these references.
+
+- Define a n-line human-created poem as $Y = (y_1, \cdot, y_n)$ and a relevance scoring function as $rel(x_i, y_i)$ to give the relevance of two lines.
+
+- Return $N$ poems with the highest relevance score $rs(X, Y)$.
+
+    $$
+    \begin{equation}
+    r s(X, Y)=\sum_{i=1}^{n} r e l\left(x_{i}, y_{i}\right)+\gamma * I\left(Y \in D_{\text {master}}\right)
+    \end{equation}
+    $$
+
+    where $D_{master}$ is a poetry set of masterpieces, $I$ is the indicator function, and the hyper-parameter $\gamma$ is specified to balance the quality and relevance of searched poems.
+
+## System
+
+The initial pageprovides some basic options: multi-modal input and the selection of genre and style.
+
+![img](/assets/images/post/2019-08-12/018.png)
+
+The collaborative creation page: an example of revision.
+
+![img](/assets/images/post/2019-08-12/019.png)
