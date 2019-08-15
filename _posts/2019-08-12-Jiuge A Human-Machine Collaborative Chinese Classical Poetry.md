@@ -467,3 +467,23 @@ Add a **regularization term** to force a strong dependency relationship between 
 
     The first term ensures that the decoder can generate fluent and coherent outputs and the second term guaran tees the style-specific output has a strong depen dency on the one-hot style representation input.
 
+
+## Generation Module - Acrostic Poetry Generation
+
+Given a sequence of words $seq = \left(x_{0,0}, x_{1,0}, \cdots, x_{n, 0}\right)$, create a poem using each word $x_{i, 0}$ as the first word of each line $x_i$ and the created poem should also conform to the genre pattern and convey proper semantic meanings.
+
+- Use pre-trained word2vec embeddings to get $K$ keywords related to $seq$ according to the cosine distance of each keyword and the words in $seq$.
+ 
+- Feed each $x_{i, 0}$ into the decoder at the first step.
+
+- Generate the second word with the conditional probability
+
+    $$
+    \begin{equation}
+    p_{g e n}\left(x_{i, 1} | x_{i, 0}\right) = p_{\operatorname{dec}}\left(x_{i, 1} | x_{i, 0}\right)+\delta * p_{\operatorname{lm}}\left(x_{i, 1} | x_{i, 0}\right)
+    \end{equation}
+    $$
+
+    where $p_{dec}$ and $p_{lm}$ are probability distributions of the decoder and a neural language model respectively.
+
+- If the length of the input sequence is less than $n$ (the number of lines in a poem), use the language model to extend it to $n$ words.
