@@ -408,7 +408,7 @@ Add a **regularization term** to force a strong dependency relationship between 
     \end{equation}
     $$
 
-    Here $K L(\operatorname{Pr}(\cdot) \| Q(\cdot))$ indicates the KLdivergence distance between probability distribution $\operatorname{Pr}(\cdot)$ and $Q(\cdot)$. The inequality comes from the fact that the KL-divergence is always no less that zero and is tight when $Pr(\cdot) = Q(\cdot)$.
+    Here $K L(\operatorname{Pr}(\cdot) \| Q(\cdot))$ indicates the KL-divergence distance between probability distribution $\operatorname{Pr}(\cdot)$ and $Q(\cdot)$. The inequality comes from the fact that the KL-divergence is always no less that zero and is tight when $Pr(\cdot) = Q(\cdot)$.
 
 - Employ neural network to parametrize the **posterior distribution estimation** function $Q$. 
     + Compute the average character embedding of sequence $Y$ and then use a linear projection with softmax normalizer to get the style distribution.
