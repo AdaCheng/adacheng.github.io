@@ -545,7 +545,7 @@ User may revise the draft for several times to collaboratively create a satisfyi
 
     where $D_{master}$ is a poetry set of masterpieces, $I$ is the indicator function, and the hyper-parameter $\gamma$ is specified to balance the quality and relevance of searched poems.
 
-## System
+# System
 
 The initial pageprovides some basic options: multi-modal input and the selection of genre and style.
 
@@ -554,3 +554,6 @@ The initial pageprovides some basic options: multi-modal input and the selection
 The collaborative creation page: an example of revision.
 
 ![img](/assets/images/post/2019-08-12/019.png)
+
+# Questions
+
