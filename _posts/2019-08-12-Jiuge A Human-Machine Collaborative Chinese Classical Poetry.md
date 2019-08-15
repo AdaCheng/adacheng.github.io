@@ -585,7 +585,7 @@ R(\mathcal{P})=\sum_{j=1}^{3} \alpha_{j} * \tilde{R}_{j}(\mathcal{P})
 \end{equation}
 $$
 
-Where $\alpha_{j}$ is the weight and the symbol $\tilde$ means the three rewards are re-scaled to the same magnitude.
+Where $\alpha_{j}$ is the weight and the symbol $\tilde{}$ means the three rewards are re-scaled to the same magnitude.
 
 ## Collaborative Revision Module
 
