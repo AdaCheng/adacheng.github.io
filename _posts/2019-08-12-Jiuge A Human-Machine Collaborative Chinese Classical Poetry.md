@@ -394,7 +394,7 @@ Add a regularization term to force a strong dependency relationship between the 
 
     $$
     \begin{equation}
-    \begin{aligned} & I(\operatorname{Pr}(\text {Sty}), \operatorname{Pr}(Y ; X)) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, \operatorname{St} y=k ; X)}{\operatorname{Pr}(\text {Sty}=k) \operatorname{Pr}(Y ; X)} d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, S t y=k ; X)}{\operatorname{Pr}(Y ; X)} d Y \\ &-\sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \log \operatorname{Pr}(\text {Sty}=k | Y ; X) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \operatorname{Pr}(\text {Sty}=k | Y) d Y+\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log P(\text {Sty}=k | Y) d Y+\log K \end{aligned}
+    \begin{aligned} & I(\operatorname{Pr}(\text {Sty}), \operatorname{Pr}(Y ; X)) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, \operatorname{St} y=k ; X)}{\operatorname{Pr}(\text {Sty}=k) \operatorname{Pr}(Y ; X)} d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \frac{\operatorname{Pr}(Y, S t y=k ; X)}{\operatorname{Pr}(Y ; X)} d Y &-\sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \log \operatorname{Pr}(\text {Sty}=k | Y ; X) \\=& \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k) \int_{Y | k ; X} \log \operatorname{Pr}(\text {Sty}=k | Y) d Y+\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log P(\text {Sty}=k | Y) d Y+\log K \end{aligned}
     \end{equation}
     $$
 
