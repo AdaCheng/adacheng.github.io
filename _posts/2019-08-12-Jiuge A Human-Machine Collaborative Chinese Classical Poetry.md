@@ -313,6 +313,8 @@ Take two arguments as input: input sentence $s_{input}$ and style id $k \in 1,2 
 
 ![img](/assets/images/post/2019-08-12/015.png)
 
+This method is transparent to model structures which can be applied to any generation model. In this stage, we employ it for the generation of Chinese quatrain poetry (Jueju).
+
 ### Mutual Information
 
 Given two random variables $X$ and $Y$, the mutual information $I(X, Y)$ measures "the amount of information" obtained about one random variable given another one. Mutual information can also be interpreted as a measurement about how similar the joint probability distribution $p(X, Y)$ is to the product of marginal distributions $p(X)p(Y)$.
@@ -461,8 +463,7 @@ Add a **regularization term** to force a strong dependency relationship between 
     \end{equation}
     $$
 
-    where $p\left(y_{i} | y_{1} y_{2} \ldots y_{i-1}, X\right)$ is style irrelevant generation likelihood and  computed by setting one-hot style representation to an all-zero vector, and $\lambda$ is a harmonic hyperparameter to balance the log-likelihood of generating sequence $Y$ and the lower bound of mutual information.
+    where $p\left(y_{i} \| y_{1} y_{2} \ldots y_{i-1}, X\right)$ is style irrelevant generation likelihood and  computed by setting one-hot style representation to an all-zero vector, and $\lambda$ is a harmonic hyperparameter to balance the log-likelihood of generating sequence $Y$ and the lower bound of mutual information.
 
     The first term ensures that the decoder can generate fluent and coherent outputs and the second term guaran tees the style-specific output has a strong depen dency on the one-hot style representation input.
 
-    
