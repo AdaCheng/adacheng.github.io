@@ -398,10 +398,12 @@ Add a regularization term to force a strong dependency relationship between the 
     \end{equation}
     $$
 
-- But the posterior probability distribution $$\operatorname{Pr}(\text {Sty}=k | Y)$$ is unknown. With the help of variational inference maximazation, we can train a parameterized function $Q(S_{ty} =k | Y)$ which estimates the posterior distribution and maximize a lower bound of mutual information.
+- But the posterior probability distribution $$\operatorname{Pr}(\text {Sty}=k \| Y)$$ is unknown. With the help of variational inference maximazation, we can train a parameterized function $Q(S_{ty} =k \| Y)$ which estimates the posterior distribution and maximize a lower bound of mutual information.
 
     $$
     \begin{equation}
-    \begin{aligned} & I(\operatorname{Pr}(S t y), \operatorname{Pr}(Y ; X))-\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \operatorname{Pr}(\text {Sty}=k | Y) d Y \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log Q(\text {Sty}=k | Y) d Y \\ &+\int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \frac{\operatorname{Pr}(\text {Sty}=k | Y)}{Q(\text {Sty}=k | Y)} d Y \end{aligned \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\ &+\int_{Y ; X} K L(\operatorname{Pr}(S \operatorname{ty} | Y), Q(S t y | Y)) d Y \\ \geq & \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(S t y=k) \int_{Y | k ; X} \log Q(S t y=k | Y) d Y \end{aligned}
+    \begin{aligned} & I(\operatorname{Pr}(S t y), \operatorname{Pr}(Y ; X))-\log K \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \operatorname{Pr}(\text {Sty}=k | Y) d Y \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log Q(\text {Sty}=k | Y) d Y \\ &+\int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(\text {Sty}=k | Y) \log \frac{\operatorname{Pr}(\text {Sty}=k | Y)}{Q(\text {Sty}=k | Y)} d Y \\=& \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\ &+\int_{Y ; X} K L(\operatorname{Pr}(S \operatorname{ty} | Y), Q(S t y | Y)) d Y \\ \geq & \int_{Y ; X} \sum_{k=1}^{K} \operatorname{Pr}(S t y=k | Y) \log Q(S t y=k | Y) d Y \\=& \sum_{k=1}^{K} \operatorname{Pr}(S t y=k) \int_{Y | k ; X} \log Q(S t y=k | Y) d Y \end{aligned}
     \end{equation}
     $$
+
+    Here $K L(\operatorname{Pr}(\cdot) \| Q(\cdot))$ indicates the KLdivergence distance between probability distribution $\operatorname{Pr}(\cdot)$ and $Q(\cdot)$.
