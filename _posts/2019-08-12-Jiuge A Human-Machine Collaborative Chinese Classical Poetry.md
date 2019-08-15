@@ -518,7 +518,7 @@ User may revise the draft for several times to collaboratively create a satisfyi
 - Local dynamic updating mode
     +  If the user revises word $x_{i, j}, then Jiuge will re-generate the succeeding subsequence $x_{i, j+1}, \cdots, x_{i, l_{i}}$ in the i-th line by feeding the revised word to the decoder for the revised position.
 - Global dynamic updating mode
-    + If the user revises word $x_{i, j}$, Jiuge will re-generate all succeeding words $x_{i, j+1}, \cdots, x_{i, l_{i}}, \cdots, x_{n, l_{n}}$.
+    + If the user revises word $x_{i, j}$, Jiuge will re-generate all succeeding words $$x_{i, j+1}, \cdots, x_{i, l_{i}}, \cdots, x_{n, l_{n}}$$.
 
 ### Automatic Reference Recommendation
 
