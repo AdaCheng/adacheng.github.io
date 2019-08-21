@@ -93,7 +93,7 @@ More details of the knowledgeable encoder K-Encoder.
 
 > ![img](/assets/images/post/2019-08-21/007.png) 
 > 
-> For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
+> In the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
 >
 > $$
 > \begin{equation}
