@@ -90,6 +90,8 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > > \end{equation}
 > > $$
 > > 
+> > ![img](/assets/images/post/2019-08-21/006.png) 
+> > 
 > > For a token $w_j$ and its aligned entity $e_k = f(w_j)$ (in this paper, align an entity to the first token in its named entity phrase), the information fusion process is as follows.
 > > 
 > > $$
