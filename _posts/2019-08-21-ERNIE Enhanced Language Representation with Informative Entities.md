@@ -136,7 +136,7 @@ In order to inject knowledge into language representation by informative entitie
 > p\left(e_{j} | w_{i}\right)=\frac{\exp \left(1 i \operatorname{near}\left(\boldsymbol{w}_{i}^{o}\right) \cdot \boldsymbol{e}_{j}\right)}{\sum_{k=1}^{m} \exp \left(1 \text { inear }\left(\boldsymbol{w}_{i}^{o}\right) \cdot \boldsymbol{e}_{k}\right)}
 \end{equation}
 > $$
-
+> 
 > Where $linear(\cdot)$ is a linear layer. The equation is used to compute the cross-entropy loss function for dEA.
 > 
 
