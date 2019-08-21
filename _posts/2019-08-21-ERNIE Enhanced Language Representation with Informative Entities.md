@@ -49,7 +49,7 @@ For incorporating external knowledge into language representation models, there 
 
 The underlying textual encoder responsible to capture basic lexical and syntactic information from the input tokens.
 
-    Given a token sequence ${w_1, \dots, w_n}$, the textual encoder firstly sums the token embedding, segment embedding, positional embedding for each token to compute its input embedding.
+    Given a token sequence ${w_1, \dots, w_n}$, where $n$ is the length of the token sequence. The textual encoder firstly sums the token embedding, segment embedding, positional embedding for each token to compute its input embedding.
 
     ![img](/assets/images/post/2019-08-21/004.png) 
 
@@ -69,3 +69,14 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 
 The upper knowledgeable encoder responsible to integrate extra token-oriented knowledge information into textual information from the underlying layer, so that we can represent heterogeneous information of tokens and entities into united feature space.
 
+Given the entity sequence aligning to tokens as ${e_1, \dots, e_m} with their entity embeddings (pre-trained by TransE) $\left\{e_{1}, \dots, e_{m}\right\}$, where $m$ is the length of the entity sequence. 
+
+Both $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$ and $\left\{e_{1}, \dots, e_{m}\right\}$ are fed into K-Encoder for fusing heterogeneous information and computing final output embeddings.
+
+$$
+\begin{equation}
+\begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=\mathrm{K}-\text { Encoder }( \left.\quad\left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\},\left\{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}\right\}\right)}\end{array}
+\end{equation}
+$$
+
+${\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}}$ and ${\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}}$ will be used as features for specific tasks.
