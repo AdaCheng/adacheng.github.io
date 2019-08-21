@@ -45,27 +45,27 @@ For incorporating external knowledge into language representation models, there 
 
 ![img](/assets/images/post/2019-08-21/003.png) 
 
-## T-Encoder
+## Textual Encoder
 
 The underlying textual encoder responsible to capture basic lexical and syntactic information from the input tokens.
 
-    Given a token sequence ${w_1, \dots, w_n}$, where $n$ is the length of the token sequence. The textual encoder firstly sums the token embedding, segment embedding, positional embedding for each token to compute its input embedding.
+Given a token sequence ${w_1, \dots, w_n}$, where $n$ is the length of the token sequence. The textual encoder firstly sums the token embedding, segment embedding, positional embedding for each token to compute its input embedding.
 
-    ![img](/assets/images/post/2019-08-21/004.png) 
+![img](/assets/images/post/2019-08-21/004.png) 
 
-    Computes lexical and syntactic features $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$.
+Computes lexical and syntactic features $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$.
 
-    $$
-    \begin{equation}
-    \left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=\mathrm{T}-\text { Encoder }\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
-    \end{equation}
-    $$
+$$
+\begin{equation}
+\left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=\mathrm{T}-\text { Encoder }\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
+\end{equation}
+$$
 
-    Where $\text{T-Encoder}(\cdot)$ is a multi-layer bidirectional Transformer encoder.
+Where $\text{T-Encoder}(\cdot)$ is a multi-layer bidirectional Transformer encoder.
 
-    ![img](/assets/images/post/2019-08-21/005.png) 
+![img](/assets/images/post/2019-08-21/005.png) 
 
-## K-Encoder
+## Knowledgeable Encoder
 
 The upper knowledgeable encoder responsible to integrate extra token-oriented knowledge information into textual information from the underlying layer, so that we can represent heterogeneous information of tokens and entities into united feature space.
 
@@ -80,3 +80,14 @@ $$
 $$
 
 ${\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}}$ and ${\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}}$ will be used as features for specific tasks.
+
+For details,
+
+$$
+\begin{equation}
+\begin{aligned}\left\{\tilde{\boldsymbol{w}}_{1}^{(i)}, \ldots, \tilde{\boldsymbol{w}}_{n}^{(i)}\right\} &=\mathrm{MH}-\mathrm{ATT}\left(\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}\right) \\\left\{\tilde{\boldsymbol{e}}_{1}^{(i)}, \ldots, \tilde{\boldsymbol{e}}_{m}^{(i)}\right\} &=\mathrm{MH}-\mathrm{ATT}\left(\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}\right) \end{aligned}
+\end{equation}
+$$
+
+
+
