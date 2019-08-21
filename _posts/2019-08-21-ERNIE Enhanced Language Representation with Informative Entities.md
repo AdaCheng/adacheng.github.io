@@ -75,11 +75,11 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > 
 > $$
 > \begin{equation}
-> \begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=K-Encoder({\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}},{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}}}\end{array}
+> \begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=K-Encoder(\left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\},\left\{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}\right\}}\end{array}
 > \end{equation}
 > $$
 > 
-> $${\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}}$$ and $${\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}}$$ will be used as features for specific tasks.
+> $$\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\}$$ and $$\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}$$ will be used as features for specific tasks.
 
 > > For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
 > > 
