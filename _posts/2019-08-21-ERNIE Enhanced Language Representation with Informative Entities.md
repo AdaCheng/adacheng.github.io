@@ -55,6 +55,8 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 >
 >Computes lexical and syntactic features $$\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$$.
 >
+>![img](/assets/images/post/2019-08-21/005.png)
+>
 >$$
 >\begin{equation}
 > \left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=T-Encoder\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
@@ -63,7 +65,6 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 > 
 > Where $\text{T-Encoder}(\cdot)$ is a multi-layer bidirectional Transformer encoder.
 > 
-> ![img](/assets/images/post/2019-08-21/005.png) 
 
 ## Knowledgeable Encoder
 
@@ -73,6 +74,8 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > 
 > Both $$\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$$ and $$\left\{e_{1}, \dots, e_{m}\right\}$$ are fed into K-Encoder for fusing heterogeneous information and computing final output embeddings.
 > 
+> ![img](/assets/images/post/2019-08-21/006.png) 
+> 
 > $$
 > \begin{equation}
 > \begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=K-Encoder(\left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\},\left\{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}\right\})}\end{array}
@@ -80,9 +83,11 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > $$
 > 
 > $$\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\}$$ and $$\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}$$ will be used as features for specific tasks.
-> ![img](/assets/images/post/2019-08-21/006.png) 
+> 
 
 > > For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
+> > 
+> > ![img](/assets/images/post/2019-08-21/006.png) 
 > > 
 > > $$
 > > \begin{equation}
