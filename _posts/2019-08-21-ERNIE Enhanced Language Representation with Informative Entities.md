@@ -53,7 +53,7 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 >
 >![img](/assets/images/post/2019-08-21/004.png) 
 >
->Computes lexical and syntactic features $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$.
+>Computes lexical and syntactic features $$\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$$.
 >
 >$$
 >\begin{equation}
@@ -69,9 +69,9 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 
 The upper knowledgeable encoder responsible to integrate extra token-oriented knowledge information into textual information from the underlying layer, so that we can represent heterogeneous information of tokens and entities into united feature space.
 
-> Given the entity sequence aligning to tokens as ${e_1, \dots, e_m} with their entity embeddings (pre-trained by TransE) $\left\{e_{1}, \dots, e_{m}\right\}$, where $m$ is the length of the entity sequence. 
+> Given the entity sequence aligning to tokens as ${e_1, \dots, e_m} with their entity embeddings (pre-trained by TransE) $$\left\{e_{1}, \dots, e_{m}\right\}$$, where $m$ is the length of the entity sequence. 
 > 
-> Both $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$ and $\left\{e_{1}, \dots, e_{m}\right\}$ are fed into K-Encoder for fusing heterogeneous information and computing final output embeddings.
+> Both $$\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$$ and $$\left\{e_{1}, \dots, e_{m}\right\}$$ are fed into K-Encoder for fusing heterogeneous information and computing final output embeddings.
 > 
 > $$
 > \begin{equation}
