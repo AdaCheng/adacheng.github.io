@@ -57,7 +57,7 @@ The underlying textual encoder responsible to capture basic lexical and syntacti
 >
 >$$
 >\begin{equation}
-> \left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=\mathrm{T}-\text { Encoder }\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
+> \left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=T-Encoder\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
 > \end{equation}
 > $$
 > 
