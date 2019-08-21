@@ -145,10 +145,10 @@ Considering that there are some errors in token-entity alignments, this paper pe
 
  - For various common NLP tasks
      + ERNIE can adopt the fine-tuning procedure similar to BERT. Take the final output mebedding of the first token, which corresponds to the special [CLS] token, as the representation of the input sequence for specific tasks.
- - For relation classification
-     + Modify the input token sequence by adding two mark tokens to highlight entity mentions, [HD] and [TL] denote for head entities and tail entities respectively. Then, take the [CLS] token embedding for classification.
  - For entity typing
      + Modify the input with the mention mark token [ENT] can guide to combine both context information and entity mention information attentively.
+ - For relation classification
+     + Modify the input token sequence by adding two mark tokens to highlight entity mentions, [HD] and [TL] denote for head entities and tail entities respectively. Then, take the [CLS] token embedding for classification.
 
 ## Experiments
 
