@@ -75,7 +75,7 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > 
 > $$
 > \begin{equation}
-> \begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=\mathrm{K}-\text { Encoder }( \left.\quad\left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\},\left\{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}\right\}\right)}\end{array}
+> \begin{array}{r}{\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\},\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}=K-Encoder({\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}},{\boldsymbol{e}_{1}, \dots, \boldsymbol{e}_{m}}}\end{array}
 > \end{equation}
 > $$
 > 
