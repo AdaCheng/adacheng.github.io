@@ -87,7 +87,7 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 
 > > For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
 > > 
-> > ![img](/assets/images/post/2019-08-21/006.png) 
+> > ![img](/assets/images/post/2019-08-21/007.png) 
 > > 
 > > $$
 > > \begin{equation}
@@ -95,7 +95,7 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > > \end{equation}
 > > $$
 > > 
-> > ![img](/assets/images/post/2019-08-21/006.png) 
+> > ![img](/assets/images/post/2019-08-21/008.png) 
 > > 
 > > For a token $w_j$ and its aligned entity $e_k = f(w_j)$ (in this paper, align an entity to the first token in its named entity phrase), the information fusion process is as follows.
 > > 
