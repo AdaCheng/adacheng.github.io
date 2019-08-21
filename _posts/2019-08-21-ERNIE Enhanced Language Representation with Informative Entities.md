@@ -114,4 +114,40 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > > \begin{aligned} \boldsymbol{h}_{j} &=\sigma\left(\tilde{\boldsymbol{W}}_{t}^{(i)} \tilde{\boldsymbol{w}}_{j}^{(i)}+\tilde{\boldsymbol{b}}^{(i)}\right) \\ \boldsymbol{w}_{j}^{(i)} &=\sigma\left(\boldsymbol{W}_{t}^{(i)} \boldsymbol{h}_{j}+\boldsymbol{b}_{t}^{(i)}\right) \end{aligned}
 > > \end{equation}
 > > $$
+> > 
+
+## Pre-training for Injecting Knowledge
+
+Similar to BERT, this paper also adopts the Masked Language Model (MLM) and the Next Sentence Prediction (NSP) as pre-training tasks. In addtional, it propose a new pre-training task the Denoising Entity Auto-encoder (dEA) to inject knowledge into language representation by informative entities.
+
+### Denoising Entity Auto-encoder
+In order to inject knowledge into language representation by informative entities, this paper propose a new pre-training task, which randomly masks some token-entity alignments and then requires the system to predict all corresponding entities based on aligned tokens which based on the given entity sequence.
+
+> Given the token sentence ${w_1, \dots, w_n}$ and its corresponding entity sequence $(e_1, \dots, e_m)$, define the aligned entity distribution for the token $w_i$ as follows,
+> 
+> $$
+> \begin{equation}
+> p\left(e_{j} | w_{i}\right)=\frac{\exp \left(1 i \operatorname{near}\left(\boldsymbol{w}_{i}^{o}\right) \cdot \boldsymbol{e}_{j}\right)}{\sum_{k=1}^{m} \exp \left(1 \text { inear }\left(\boldsymbol{w}_{i}^{o}\right) \cdot \boldsymbol{e}_{k}\right)}
+\end{equation}
+> $$
+
+> Where $linear(\cdot)$ is a linear layer. The equation is used to compute the cross-entropy loss function for dEA.
+> 
+
+Considering that there are some errors in token-entity alignments, this paper perform the following operations for dEA:
+- In 5% of the time, for a given token-entity alignment, replace the entity with another random entity, which aims to train the model to correct the errors that the token is aligned with a wrong entity;
+- In 15% of the time, mask token-entity alignments, which aims to train the model to correct the errors that the entity alignment system does not extract all existing alignments;
+- In the rest of the time, keep token-entity alignments unchanged, which aims to encourage the model to integrate the entity information into token representations for better language understanding.
+
+## Fine-tuning for Specific Tasks
+
+ ![img](/assets/images/post/2019-08-21/009.png) 
+
+ - For various common NLP tasks
+     + ERNIE can adopt the fine-tuning procedure similar to BERT. Take the final output mebedding of the first token, which corresponds to the special [CLS] token, as the representation of the input sequence for specific tasks.
+ - For relation classification
+     + Modify the input token sequence by adding two mark tokens to highlight entity mentions, [HD] and [TL] denote for head entities and tail entities respectively. Then, take the [CLS] token embedding for classification.
+ - For entity typing
+     + Modify the input with the mention mark token [ENT] can guide to combine both context information and entity mention information attentively.
+
 
