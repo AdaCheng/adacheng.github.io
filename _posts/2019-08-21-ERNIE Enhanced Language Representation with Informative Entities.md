@@ -80,6 +80,7 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > $$
 > 
 > $$\left\{\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}\right\}$$ and $$\left\{\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}\right\}$$ will be used as features for specific tasks.
+> ![img](/assets/images/post/2019-08-21/006.png) 
 
 > > For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
 > > 
