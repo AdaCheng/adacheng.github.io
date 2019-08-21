@@ -43,3 +43,29 @@ For incorporating external knowledge into language representation models, there 
 
 # Architecture
 
+![img](/assets/images/post/2019-08-21/003.png) 
+
+## T-Encoder
+
+The underlying textual encoder responsible to capture basic lexical and syntactic information from the input tokens.
+
+    Given a token sequence ${w_1, \dots, w_n}$, the textual encoder firstly sums the token embedding, segment embedding, positional embedding for each token to compute its input embedding.
+
+    ![img](/assets/images/post/2019-08-21/004.png) 
+
+    Computes lexical and syntactic features $\left\{\boldsymbol{w}_{1}, \dots, \boldsymbol{w}_{n}\right\}$.
+
+    $$
+    \begin{equation}
+    \left\{\boldsymbol{w}_{1}, \ldots, \boldsymbol{w}_{n}\right\}=\mathrm{T}-\text { Encoder }\left(\left\{w_{1}, \ldots, w_{n}\right\}\right)
+    \end{equation}
+    $$
+
+    Where $\text{T-Encoder}(\cdot)$ is a multi-layer bidirectional Transformer encoder.
+
+    ![img](/assets/images/post/2019-08-21/005.png) 
+
+## K-Encoder
+
+The upper knowledgeable encoder responsible to integrate extra token-oriented knowledge information into textual information from the underlying layer, so that we can represent heterogeneous information of tokens and entities into united feature space.
+
