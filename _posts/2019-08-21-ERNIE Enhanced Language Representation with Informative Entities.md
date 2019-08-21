@@ -79,9 +79,9 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > \end{equation}
 > $$
 > 
-> ${\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}}$ and ${\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}}$ will be used as features for specific tasks.
+> $${\boldsymbol{w}_{1}^{o}, \ldots, \boldsymbol{w}_{n}^{o}}$$ and $${\boldsymbol{e}_{1}^{o}, \ldots, \boldsymbol{e}_{n}^{o}}$$ will be used as features for specific tasks.
 
-> > For details, in the i-th aggregator, the input token embedding $\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$ and entity embeddings $\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
+> > For details, in the i-th aggregator, the input token embedding $$\left\{\boldsymbol{w}_{1}^{(i-1)}, \ldots, \boldsymbol{w}_{n}^{(i-1)}\right\}$$ and entity embeddings $$\left\{\boldsymbol{e}_{1}^{(i-1)}, \ldots, \boldsymbol{e}_{m}^{(i-1)}\right\}$$ are fed into two multi-head self-attentions (MH_ATTs) respectively.
 > > 
 > > $$
 > > \begin{equation}
@@ -97,7 +97,7 @@ The upper knowledgeable encoder responsible to integrate extra token-oriented kn
 > > \end{equation}
 > > $$
 > > 
-> > where $\boldsymbol{h}_j$ is the inner hidden state integrating the information of both the token and the entity. $\sigma(\cdot)$ is the non-linear activation function.
+> > where $$\boldsymbol{h}_j$$ is the inner hidden state integrating the information of both the token and the entity. $$\sigma(\cdot)$$ is the non-linear activation function.
 > > 
 > > For the tokens without corresponding entities, the information fusion layer is as follows.
 > > 
