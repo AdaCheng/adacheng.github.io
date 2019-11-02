@@ -10,8 +10,8 @@ tags:
 # Commonsense
 
 ## Dataset
-- **[ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)**  
-    **ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
+#### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146) 
+**ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
 
     ![ATOMIC](/assets/images/Commonsense/ATOMIC.png)
 
@@ -25,14 +25,14 @@ tags:
 
 ## Recommendation
 
-- **COMET: Commonsense Transformers for Automatic Knowledge Graph Construction** (TODO)  
+#### COMET: Commonsense Transformers for Automatic Knowledge Graph Construction (TODO)  
  Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi  
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
  *Paul G. Allen School of Computer Science & Engineering, Seattle, WA, USA*  
  *Microsoft Research, Redmond, WA, USA*  
  *ACL'19*
 
-    - [Link of Paper (Citation: 3)](https://arxiv.org/abs/1906.05317)  
-    - Link of Note
+ - [Link of Paper (Citation: 3)](https://arxiv.org/abs/1906.05317)  
+ - Link of Note
 
 ## Paper
