@@ -24,7 +24,8 @@ tags:
 - [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)  
 
 ## Recommendation
-### 1. COMET: Commonsense Transformers for Automatic Knowledge Graph Construction (TODO)
+
+- COMET: Commonsense Transformers for Automatic Knowledge Graph Construction (TODO)  
  Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi  
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
  *Paul G. Allen School of Computer Science & Engineering, Seattle, WA, USA*  
