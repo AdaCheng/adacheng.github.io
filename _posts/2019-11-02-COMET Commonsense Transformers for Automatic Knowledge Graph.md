@@ -7,7 +7,7 @@ tags:
  - Commonsense
 ---
 
-![Paper](../assets/images/post/2019-11-02/01.png)
+![Paper](/assets/images/post/2019-11-02/01.png)
 
 __Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi__
 *Allen Institute for Artificial Intelligence, Seattle, WA, USA*
