@@ -14,7 +14,7 @@ __Zhengyan Zhang, Xu Han, Zhiyuan Liu, Xin Jiang, Maosong Sun, Qun Liu__
 *Tsinghua University*  
 *ACL'19*
 
->[Linke of Paper](https://arxiv.org/abs/1905.07129)
+>[Link of Paper](https://arxiv.org/abs/1905.07129)
 
 # Motivations
 - The existing pre-trained language models rarely consider incorporating knowledge graphs (KGs), which can provide rich strcutured knowledge facts for better language understanding.

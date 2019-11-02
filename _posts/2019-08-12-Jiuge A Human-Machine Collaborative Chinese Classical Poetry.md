@@ -13,7 +13,7 @@ __Zhipeng Guo, Xiaoyuan Yi, Maosong Sun, Wenhao Li, Cheng Yang, Jiannan Liang, H
 *Tsinghua University*  
 *ACL'19*
 
->[Linke of Paper](https://www.aclweb.org/anthology/papers/P/P19/P19-3005/)
+>[Link of Paper](https://www.aclweb.org/anthology/papers/P/P19/P19-3005/)
 
 # Motivations
 - Most existing systems are merely **model-oriented**, which input some user-specified keywords and directly complete the generation proess in one pass, with little user participation.
