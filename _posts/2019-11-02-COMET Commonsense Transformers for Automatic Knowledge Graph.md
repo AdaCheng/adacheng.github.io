@@ -1,5 +1,5 @@
 ---
-title: COMET: Commonsense Transformers for Automatic Knowledge Graph
+title: COMET, Commonsense Transformers for Automatic Knowledge Graph
 description: An introduction for a paper published in ACL'19.
 categories:
  - Paper_Note
