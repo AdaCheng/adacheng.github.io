@@ -45,7 +45,17 @@ COMET is given a training knowledge base of natural language tuples in
 > a ConceptNet tuple relating to "taking a nap" would be: (s = "take a nap", r = Causes, o = "have energy").  
 
 ### Notation
-- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{|s|}^{s}\right\}$$ as the tokens that make up the subject of the relation.
-- $$X^{r}=\left\{x_{0}^{r}, \ldots, x_{|r|}^{r}\right\}$$ as the tokens that make up the relation of the tuple.
-- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{|s|}^{s}\right\}$$ as the tokens that make up the object of the tuple.
+- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{\|s\|}^{s}\right\}$$ as the tokens that make up the subject of the relation.
+- $$X^{r}=\left\{x_{0}^{r}, \ldots, x_{\|r\|}^{r}\right\}$$ as the tokens that make up the relation of the tuple.
+- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{\|s\|}^{s}\right\}$$ as the tokens that make up the object of the tuple.
 - The embedding for any word $x$ is denoted as $e$.
+
+## Structure
+### Transformer Langague Model
+Use the transformer language model architecture introduced in GPT, which uses multiple transformer blocks of multi-headed scaled dot product attention and fully connected layers to encode input text.
+
+![Structure](/assets/images/post/2019-11-02/02.png)
+
+> Defualt readers are familiar with GPT, we will not explore it in this article. If you are interested in this part, please check my another article (todo).
+
+### Input Encoder
