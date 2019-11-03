@@ -37,9 +37,15 @@ This paper casts commonsense acquisition as knowledge base construction and inve
 
 # Method
 ## Task
+### Definition
 COMET is given a training knowledge base of natural language tuples in 
 {$s, r, o$} format, where $s$ is the phrase subject of the tuple, $r$ is the relation of tuple, and $o$ is the phrase object of the tuple. The task is to generate $o$ given $s$ and $r$ as inputs.
 
 > For example,  
 > a ConceptNet tuple relating to "taking a nap" would be: (s = "take a nap", r = Causes, o = "have energy").  
 
+### Notation
+- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{|s|}^{s}\right\}$$ as the tokens that make up the subject of the relation.
+- $$X^{r}=\left\{x_{0}^{r}, \ldots, x_{|r|}^{r}\right\}$$ as the tokens that make up the relation of the tuple.
+- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{|s|}^{s}\right\}$$ as the tokens that make up the object of the tuple.
+- The embedding for any word $x$ is denoted as $e$.
