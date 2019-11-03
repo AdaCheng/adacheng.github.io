@@ -49,7 +49,7 @@ COMET is given a training knowledge base of natural language tuples in
 ### Notation
 - $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{\|s\|}^{s}\right\}$$ as the tokens that make up the subject of the relation.
 - $$X^{r}=\left\{x_{0}^{r}, \ldots, x_{\|r\|}^{r}\right\}$$ as the tokens that make up the relation of the tuple.
-- $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{\|s\|}^{s}\right\}$$ as the tokens that make up the object of the tuple.
+- $$X^{o}=\left\{x_{0}^{o}, \ldots, x_{\|o\|}^{o}\right\}$$ as the tokens that make up the object of the tuple.
 - The embedding for any word $x$ is denoted as $e$.
 
 ## Structure
