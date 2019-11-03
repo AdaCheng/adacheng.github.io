@@ -81,7 +81,7 @@ where $p_t$ is the position embedding for time step $t$, and $h_0$ is the input 
 
 ## Experiment
 ### Training
-**COMET** is trained to learn to generate the token of $o$: $X^o$ by given the concatenation of the tokens of $s$ and $r$: $\left[X^{s}, X^{r}\right]$ as input.
+COMET is trained to learn to generate the token of $o$: $X^o$ by given the concatenation of the tokens of $s$ and $r$: $\left[X^{s}, X^{r}\right]$ as input.
 
 #### Dataset
 COMET relies on a seed set of knowledge tuples from an existing KB to learn to produce commonsense knowledge.
