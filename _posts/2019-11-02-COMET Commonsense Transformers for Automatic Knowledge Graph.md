@@ -61,15 +61,21 @@ Use the transformer language model architecture introduced in GPT, which uses mu
 ### Input Encoder
 Represent a knowledge tuple {$s, r, o$} as a concatenated sequence of the words of each item of the tuple:
 
+$$
 \begin{equation}
 \mathbf{X}=\left\{X^{S}, X^{r}, X^{o}\right\}
 \end{equation}
+$$
 
 For any input word $$x_{t} \in \mathbf{X}$$, the encoding of the input is the sum of its word embedding, $e_t$ with a position embedding encoding its absolute position (becuase the transformer has no concept of ordering of tokens) in the sequence $X$:
 
+$$
 \begin{equation}
 h_{t}^{0}=e_{t}+p_{t}
 \end{equation}
+$$
 
 where $p_t$ is the position embedding for time step $t$, and $h_0$ is the input to the first transformer layer.
 
+## Experiment
+### Training
