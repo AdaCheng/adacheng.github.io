@@ -117,3 +117,12 @@ where $\|s\|$, $\|r\|$, and $\|o\|$ are the number of tokens in the subject phra
 - A dropout rate of 0.1.
 - Use GeLU units as activation function.
 - Batch-size is 64.
+
+### ATOMIC Experiments
+#### ATOMIC Dataset
+The [ATOMIC dataset](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz) contains 877K tuples covering a variety of social commonsense knowlegde around specific event prompts.
+
+> For example,  
+> a ATOMIC tuple: (event = "X goes to the store" = phrase subject $s$, inference dimension = xIntent = phrase relation $r$, cause/effect = "to get food" = phrase object $o$).
+
+Split the dataset to 710k training, 80k development, and 87k test tuples respectively.
