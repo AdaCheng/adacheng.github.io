@@ -21,7 +21,7 @@ __Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celiky
 
 # Background
 ## Commonsense KBs
-Contrary to many conventional KBs that store knowledge with canonival templates, commonsense KBs only store **loosely structured open-text descriptions of knowledge**.
+Contrary to many conventional KBs that store knowledge with canonival templates, commonsense KBs only store loosely structured open-text descriptions of knowledge.
 
 ## Motivation
 1. Commonsense knowledge does not cleanly fit into a schema comparing two entities with a known relation.
@@ -59,3 +59,15 @@ Use the transformer language model architecture introduced in GPT, which uses mu
 > Defualt readers are familiar with GPT, we will not explore it in this article. If you are interested in this part, please check my another article (todo).
 
 ### Input Encoder
+Represent a knowledge tuple {$s, r, o$} as a concatenated sequence of the words of each item of the tuple:
+
+\begin{equation}
+\mathbf{X}=\left\{X^{S}, X^{r}, X^{o}\right\}
+\end{equation}
+
+For any input word $$x_{t} \in \mathbf{X}$$, the encoding of the input is the sum of its word embedding, $e_t$ with a position embedding encoding its absolute position (becuase the transformer has no concept of ordering of tokens) in the sequence $X$:
+
+\begin{equation}
+h_{t}^{0}=e_{t}+p_{t}
+\end{equation}
+
