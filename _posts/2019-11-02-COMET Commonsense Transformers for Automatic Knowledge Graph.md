@@ -71,3 +71,5 @@ For any input word $$x_{t} \in \mathbf{X}$$, the encoding of the input is the su
 h_{t}^{0}=e_{t}+p_{t}
 \end{equation}
 
+where $p_t$ is the position embedding for time step $t$, and $h_0$ is the input to the first transformer layer.
+
