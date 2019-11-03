@@ -23,6 +23,9 @@ __Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celiky
 ## Commonsense KBs
 Contrary to many conventional KBs that store knowledge with canonival templates, commonsense KBs only store loosely structured open-text descriptions of knowledge.
 
+> For example,  
+> a ConceptNet tuple relating to "taking a nap" would be: (s = "take a nap", r = Causes, o = "have energy").  
+
 ## Motivation
 1. Commonsense knowledge does not cleanly fit into a schema comparing two entities with a known relation.
 2. Current approaches can only capture knowledge that is explicitly mentioned in text, limiting their applicability for capturing commonsense knowledge, which is often implicit.
@@ -41,8 +44,7 @@ This paper casts commonsense acquisition as knowledge base construction and inve
 COMET is given a training knowledge base of natural language tuples in 
 {$s, r, o$} format, where $s$ is the phrase subject of the tuple, $r$ is the relation of tuple, and $o$ is the phrase object of the tuple. The task is to generate $o$ given $s$ and $r$ as inputs.
 
-> For example,  
-> a ConceptNet tuple relating to "taking a nap" would be: (s = "take a nap", r = Causes, o = "have energy").  
+![Structure](/assets/images/post/2019-11-02/04.png)
 
 ### Notation
 - $$X^{s}=\left\{x_{0}^{s}, \ldots, x_{\|s\|}^{s}\right\}$$ as the tokens that make up the subject of the relation.
@@ -52,7 +54,7 @@ COMET is given a training knowledge base of natural language tuples in
 
 ## Structure
 ### Transformer Langague Model
-Use the transformer language model architecture introduced in GPT, which uses multiple transformer blocks of multi-headed scaled dot product attention and fully connected layers to encode input text.
+Use the transformer language model architecture introduced in [GPT](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf), which uses multiple transformer blocks of multi-headed scaled dot product attention and fully connected layers to encode input text.
 
 ![Structure](/assets/images/post/2019-11-02/02.png)
 
@@ -95,3 +97,23 @@ The tokens in $s$, $r$, and $o$ are organized for different training tasks.
 
 ![input_token](/assets/images/post/2019-11-02/03.png)
 
+#### Loss Function
+Maximize the conditional loglikelihood of predicting the phrase object tokens, $X^o$:
+
+$$
+\begin{equation}
+\mathcal{L}=-\sum_{t=|s|+|r|}^{|s|+|r|+|o|} \log P\left(x_{t} | x_{<t}\right)
+\end{equation}
+$$
+
+where $\|s\|$, $\|r\|$, and $\|o\|$ are the number of tokens in the subject phrase, relation, and object phrase, respectively.
+
+#### Initialization
+- Parameters are initialized to the final language model weights from GPT.
+- Additional special tokens that are added to the vocabulary for fine tuning (e.g., relation embeddings such as *oReact* for ATOMIC and *IsA* for ConceptNet) are initialized by sampling from the standard normal distribution.
+
+#### Hyperparameters
+- 12 layers, 768-dimensional hidden states, and 12 attention heads.
+- A dropout rate of 0.1.
+- Use GeLU units as activation function.
+- Batch-size is 64.
