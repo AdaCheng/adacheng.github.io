@@ -128,14 +128,51 @@ The [ATOMIC dataset](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.
 Split the dataset to 710k training, 80k development, and 87k test tuples respectively.
 
 #### Result
+##### Baseline
+The model trained in [ATOMIC](https://arxiv.org/abs/1811.00146) that use LSTM sequence-to-sequence models to encode the input subject and relation and produce an output object.
+
 ##### Automatic Evaluation Metric
-- Perplexity of the model on its gold generations
+
+![Result](/assets/images/post/2019-11-02/05.png)
+
+- Perplexity of the model on its gold generations (PPL)
 - BLEU-2
 - The proportion of generated tuples and generated objects which are not in the training set
     + The proportion of all generated tuples that are novel (N/T *sro*)
     + The proportion of all generated tuples that have a novel object (N/T *o*)
     + The number of novel objects as a function of the set of unique objects produced for all test set events (N/U *o*)
 
-![Result](/assets/images/post/2019-11-02/05.png)
+##### Human Evaluation
 
-##### 
+![Result](/assets/images/post/2019-11-02/06.png)
+
+Using workers from Amazon Mechanical Turk (AMT).
+- n = 5000 (100 events $\times$ 5 workers $\times$ 10 candidates) ratings are produced per relation
+    + Evaluate 100 randomly selected events from the test set.
+    + For each event and relation type, 10 candidates are generated using beam search.
+    + The full beam is evaluated by five different workers.
+
+##### Effect of decoding algorithm
+
+![Result](/assets/images/post/2019-11-02/07.png)
+
+##### Efficiency of learning from seed tuples
+
+![Result](/assets/images/post/2019-11-02/08.png)
+
+### ConceptNet Experiments
+#### ConceptNet Dataset
+The [ConceptNet dataset](https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz) consists of tuples obtained from the Open Mind Common Sense (OMCS) entries in ConceptNet 5.
+
+> For example,  
+> a ConceptNet tuple: (Subject $s$= "take a nap", Relation $r$ = "Causes", Object $o$ = "have energy").
+
+The most confident 1200 tuples were used to create the test set, while the next 1200 tuples were used to create two development sets. The 100k version of the training set was used to train models, which contains 34 relation types.
+
+#### Result
+##### Mertic
+
+![Result](/assets/images/post/2019-11-02/09.png)
+
+- The number of generated positive examples in the test set that are scored as correct by the [pre-trained Bilinear AVG model](https://www.aclweb.org/anthology/P16-1137/). (Score)
+
