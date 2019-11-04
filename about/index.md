@@ -14,11 +14,11 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
     + Visiting Student, Sept. 2019 - now
     + Research Field: Commonsense & Natural Language Processing
 - **International Training Program of Artificial Intelligence Talents in Chinese Universities, Peking University**
-    + Supervisor: **Dr. Fuzheng Zhang**
+    + Supervisor: **[Dr. Fuzheng Zhang](https://zhfzhmsra.github.io/)**
     + Team leader of Summer School, Jul. 2018 - Aug. 2018
     + Research Field: Knowledge Graph & Recommendation System
 - **Chongqing Key Laboratory of Intelligent Computing, Chongqing University of Communications and Posts**
-    + Supervisor: **Prof. Zhixing Li**
+    + Supervisor: **[Prof. Zhixing Li](https://cn.linkedin.com/in/zhixing-li-b6bb5151)**
     + Member of Laboratory, Sept. 2017 - Jun. 2019
     + Research Field: Natural Language Processing
 
