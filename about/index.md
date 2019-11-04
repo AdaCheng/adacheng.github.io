@@ -3,9 +3,8 @@ layout: page
 type: about
 ---
 
-Sijie Cheng
+# Sijie Cheng
 
-# About me
 
-# Research Experience
+## Research Experience
 
