@@ -17,3 +17,8 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
     + Jul. 2018 - Aug. 2018
     + Team leader of Summer School
     + Research Field: Knowledge Graph & Recommendation System
+- **Chongqing Key Laboratory of Intelligent Computing, Chongqing University of Communications and Posts** supervised by **Prof. Zhixing Li**
+    + Sept. 2017 - Jun. 2019
+    + Member of Laboratory
+    + Research Field: Natural Language Processing
+
