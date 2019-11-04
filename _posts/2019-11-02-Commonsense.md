@@ -33,6 +33,6 @@ tags:
  *ACL'19*
 
  - [Link of Paper (Citation: 3)](https://arxiv.org/abs/1906.05317)  
- - Link of Note
+ - [Link of Note](https://adacheng.github.io/paper_note/2019/11/02/COMET-Commonsense-Transformers-for-Automatic-Knowledge-Graph/)
 
 ## Paper
