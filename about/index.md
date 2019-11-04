@@ -10,4 +10,7 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 
 ## Research Experience
 - **Text Intelligence Lab, Westlake University** supervised by [Prof. Yue Zhang](https://frcchang.github.io)
-    + 
+    + Sept. 2019 - now
+    + Visiting Student
+    + Research Field: Commonsense & Natural Language Processing
+- 
