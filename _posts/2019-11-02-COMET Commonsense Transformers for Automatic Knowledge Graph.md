@@ -80,6 +80,9 @@ $$
 where $p_t$ is the position embedding for time step $t$, and $h_0$ is the input to the first transformer layer.
 
 ## Experiment
+
+> For more details, please check [paper](https://arxiv.org/abs/1906.05317) carefully.
+
 ### Training
 COMET is trained to learn to generate the token of $o$: $X^o$ by given the concatenation of the tokens of $s$ and $r$: $\left[X^{s}, X^{r}\right]$ as input.
 
@@ -170,9 +173,30 @@ The [ConceptNet dataset](https://s3.amazonaws.com/conceptnet/downloads/2019/edge
 The most confident 1200 tuples were used to create the test set, while the next 1200 tuples were used to create two development sets. The 100k version of the training set was used to train models, which contains 34 relation types.
 
 #### Result
+##### Baseline
+Re-implement [the BiLSTM model](https://www.aclweb.org/anthology/K18-1014/) with minor modifications.
+
 ##### Mertic
 
 ![Result](/assets/images/post/2019-11-02/09.png)
 
 - The number of generated positive examples in the test set that are scored as correct by the [pre-trained Bilinear AVG model](https://www.aclweb.org/anthology/P16-1137/). (Score)
+
+##### Edit Distance
+
+![Result](/assets/images/post/2019-11-02/10.png)
+
+One shortcoming is that novel generations are sometimes simplified forms of tuples from the training set.
+
+> For example,  
+> the tuple "doctor CapableOf save life" is not present in the training set, but "doctor CapableOf save person life" is.
+
+To explore further, this paper investigates by how much novel tuples from the development set differ from training set phrase objects for the same $s$, $r$ using minimum edit distance of phrase objects.
+
+##### Instance
+
+![Result](/assets/images/post/2019-11-02/11.png)
+
+# Summarization
+- This Paper converts Commonsense Acquisition task into Knowledge Base Construction, by using the most popular and state-of-the-art model, pre-training language model **GPT**, to generate the objects of tuples. To some extent, it is confirmed that a large amount of commonsense knowlegde can be learnt from the pre-training language model.
 
