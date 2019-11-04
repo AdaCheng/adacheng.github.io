@@ -126,3 +126,14 @@ The [ATOMIC dataset](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.
 > a ATOMIC tuple: (event = "X goes to the store" = phrase subject $s$, inference dimension = xIntent = phrase relation $r$, cause/effect = "to get food" = phrase object $o$).
 
 Split the dataset to 710k training, 80k development, and 87k test tuples respectively.
+
+#### Result
+##### Metircs
+###### Automatic Evaluation Metric
+- Perplexity of the model on its gold generations
+- BLEU-2
+- The proportion of generated tuples and generated objects which are not in the training set
+    + The proportion of all generated tuples that are novel (N/T *sro*)
+    + The proportion of all generated tuples that have a novel object (N/T *o*)
+    + The number of novel objects as a function of the set of unique objects produced for all test set events (N/U *o*)
+- 
