@@ -9,16 +9,16 @@ I am a fourth-year undergraduate in the Experimental Class of Excellent Engineer
 I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn/)** at Fudan University with **[Prof. Yanghua Xiao](http://gdm.fudan.edu.cn/GDMWiki/Wiki.jsp?page=Yanghuaxiao)** as a graduate student.
 
 ## Research Experience
-- **Text Intelligence Lab, Westlake University** supervised by **[Prof. Yue Zhang](https://frcchang.github.io)**
-    + Sept. 2019 - now
-    + Visiting Student
+- **Text Intelligence Lab, Westlake University**
+    + Supervisor: **[Prof. Yue Zhang](https://frcchang.github.io)**
+    + Visiting Student, Sept. 2019 - now
     + Research Field: Commonsense & Natural Language Processing
-- **International Training Program of Artificial Intelligence Talents in Chinese Universities, Peking University** supervised by **Dr. Fuzheng Zhang**
-    + Jul. 2018 - Aug. 2018
-    + Team leader of Summer School
+- **International Training Program of Artificial Intelligence Talents in Chinese Universities, Peking University**
+    + Supervisor: **Dr. Fuzheng Zhang**
+    + Team leader of Summer School, Jul. 2018 - Aug. 2018
     + Research Field: Knowledge Graph & Recommendation System
-- **Chongqing Key Laboratory of Intelligent Computing, Chongqing University of Communications and Posts** supervised by **Prof. Zhixing Li**
-    + Sept. 2017 - Jun. 2019
-    + Member of Laboratory
+- **Chongqing Key Laboratory of Intelligent Computing, Chongqing University of Communications and Posts**
+    + Supervisor: **Prof. Zhixing Li**
+    + Member of Laboratory, Sept. 2017 - Jun. 2019
     + Research Field: Natural Language Processing
 
