@@ -7,7 +7,7 @@
 title: Ada's World
 subtitle: 
 description: Keep looking, don't settle.
-author: AdaCheng
+author: SijieCheng
 #Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%m-%d-%Y'
@@ -117,7 +117,7 @@ index_with_subtitle: false
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
+  home: /about/
   about: /about/
   publications: /publications/
   categories: /categories/
