@@ -35,7 +35,7 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 - **4th/661**, Future Food Challenge in Tianchi
 - **User Experience Award**, Google Girl Hackathon 2018
 - **Best Technology Award**, Google Innocamp 2017
-- **7 th Place**, National Olympiad in Informatics in Provinces 2006 - 2016
+- **7th Place**, National Olympiad in Informatics in Provinces 2006 - 2016
 
 ## Community
 - CQUPT Artificial Intelligence Association
