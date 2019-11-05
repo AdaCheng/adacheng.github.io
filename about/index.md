@@ -47,7 +47,7 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 
 ## Enjoy Life :)
 - Basketball (Gunner, left-handed)
-    + List of my 'Combat Boot'
+    + List of my 'Combat Boots'
         * NIKE KD 9 Fire Ice
         * ANTA KT 5 Disco ball
 - Soccer (Newbie)
