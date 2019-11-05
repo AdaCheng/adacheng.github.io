@@ -44,3 +44,15 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
     + Co-Founder & Principal of Female Track
 - [Leiphone Fansub](https://www.yanxishe.com/translation)
     + Team Leader of Speech and Semantic Subtitle Group(https://www.yanxishe.com/translation/6)
+
+## Enjoy Life :)
+- Basketball (Gunner, left-handed)
+    + List of my 'Combat Boot'
+        * NIKE KD 9 Fire Ice
+        * ANTA KT 5 Disco ball
+- Soccer (Newbie)
+    + My favor is [FC Barcelona](https://www.fcbarcelona.cn/), Argentina National Footbal Team and [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi).
+    + My puppy love is Spain National Footbal Team (2010 - 2012).
+- Instruments (Erhu & Piano)
+- Travel
+- Writing & Reading
