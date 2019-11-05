@@ -43,7 +43,7 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 - [Opening Source Community](https://openingsource.org/)
     + Co-Founder & Principal of Female Track
 - [Leiphone Fansub](https://www.yanxishe.com/translation)
-    + Team Leader of Speech and Semantic Subtitle Group(https://www.yanxishe.com/translation/6)
+    + [Team Leader of Speech and Semantic Subtitle Group](https://www.yanxishe.com/translation/6)
 
 ## Enjoy Life :)
 - Basketball (Gunner, left-handed)
