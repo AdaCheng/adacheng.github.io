@@ -41,7 +41,7 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 - **CQUPT Artificial Intelligence Association**, Founder & Association President
 - **[Leiphone Fansub](https://www.yanxishe.com/translation)**, [Team Leader of Speech and Semantic Subtitle Group](https://www.yanxishe.com/translation/6)
 - **[Google Flutter $\times$ Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader
-- **[Microsoft Student Partners](https://studentpartners.microsoft.com/zh-cn)**, member
+- **[Microsoft Student Partners](https://studentpartners.microsoft.com/zh-cn)**, Member
 - **[Opening Source Community](https://openingsource.org/)**, Co-Founder & Principal of Female Track
 
 
