@@ -9,7 +9,7 @@ I am a fourth-year undergraduate in the Experimental Class of Excellent Engineer
 I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn/)** at Fudan University with **[Prof. Yanghua Xiao](http://gdm.fudan.edu.cn/GDMWiki/Wiki.jsp?page=Yanghuaxiao)** as a graduate student.
 
 ## Research Interest
-- [Commonsense](https://adacheng.github.io/nlp_research/2019/11/02/Commonsense/) & Reasoning
+- [Commonsense](https://adacheng.github.io/nlp_research/2019/11/02/Commonsense/) & Reasoning -> World Model
 - [Machine Translation](https://adacheng.github.io/nlp_research/2019/11/02/Machine-Translation/)
 - Language Model
 
