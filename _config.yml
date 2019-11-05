@@ -5,7 +5,7 @@
 
 # Site
 title: Ada's World
-subtitle: 
+subtitle: Sijie Cheng
 description: Keep looking, don't settle.
 author: SijieCheng
 #Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
@@ -117,7 +117,6 @@ index_with_subtitle: false
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /about/
   about: /about/
   publications: /publications/
   categories: /categories/
@@ -135,7 +134,6 @@ menu:
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
   publications: quote-left
   about: user
   categories: th
