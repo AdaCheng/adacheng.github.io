@@ -70,7 +70,7 @@ tags:
  - [Link of Paper (Citation: 177)](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf)
  - [Link of Note](https://adacheng.github.io/survey/2019/06/26/自然语言处理之预训练技术/)
 
-#### BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (TODO)
+#### BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
  Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova  
  *Google AI Language*  
  *NAACL'19*
