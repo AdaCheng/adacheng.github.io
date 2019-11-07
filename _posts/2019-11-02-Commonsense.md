@@ -24,7 +24,8 @@ tags:
 #### [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)
 
 ## Recommendation
-
+### Analysis
+### Method
 #### COMET: Commonsense Transformers for Automatic Knowledge Graph Construction
  Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi  
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
@@ -36,3 +37,13 @@ tags:
  - [Link of Note](https://adacheng.github.io/paper_note/2019/11/02/COMET-Commonsense-Transformers-for-Automatic-Knowledge-Graph/)
 
 ## Paper
+### Analysis
+#### Reporting bias and knowledge acquisition
+ Jonathan Gordon, Benjamin Van Durme  
+ *Dept of Computer Science, University of Rochester, Rochester, NY, USA*  
+ *HLTCOE, Johns Hopkins University, Baltimore, MD, USA*  
+ *AKBC@CIKM'13*
+
+- [Linke of Paper (Citation: 12)](https://dl.acm.org/citation.cfm?id=2509563)
+
+### Method
