@@ -4,14 +4,11 @@ type: about
 ---
 
 ## About
-I am a fourth-year undergraduate in the Experimental Class of Excellent Engineer, School of Software Engineering at Chongqing University of Communications and Posts.
-
-I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn/)** at Fudan University with **[Prof. Yanghua Xiao](http://gdm.fudan.edu.cn/GDMWiki/Wiki.jsp?page=Yanghuaxiao)** as a graduate student.
+I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn/)** at Fudan University with **[Prof. Yanghua Xiao](http://gdm.fudan.edu.cn/GDMWiki/Wiki.jsp?page=Yanghuaxiao)** as a graduate student.
 
 ## Research Interest
-- [Commonsense](https://adacheng.github.io/nlp_research/2019/11/02/Commonsense/) & Reasoning -> World Model
-- [Machine Translation](https://adacheng.github.io/nlp_research/2019/11/02/Machine-Translation/)
-- Language Model
+- Commonsense & Reasoning -> World Model
+- Machine Translation
 
 ## Research Experience
 - **Text Intelligence Lab, Westlake University**
@@ -41,18 +38,16 @@ I will work in the **[Knowledge Works Research Labortory](http://kw.fudan.edu.cn
 - **CQUPT Artificial Intelligence Association**, Founder & Association President
 - **[Leiphone Fansub](https://www.yanxishe.com/translation)**, [Team Leader of Speech and Semantic Subtitle Group](https://www.yanxishe.com/translation/6)
 - **[Google Flutter X Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader
-- **[Microsoft Student Partners](https://studentpartners.microsoft.com/zh-cn)**, Member
-- **[Opening Source Community](https://openingsource.org/)**, Co-Founder & Principal of Female Track
-
 
 ## Enjoy Life :)
 - Basketball (Gunner, left-handed)
     + List of my 'Combat Boots'
         * NIKE KD 9 Fire Ice
         * ANTA KT 5 Disco ball
-- Soccer (Newbie)
+- Soccer
     + My favor is [FC Barcelona](https://www.fcbarcelona.cn/), Argentina National Footbal Team and [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi).
     + My puppy love is Spain National Footbal Team (2010 - 2012).
 - Instruments (Erhu & Piano)
 - Travel
+    + 
 - Writing & Reading
