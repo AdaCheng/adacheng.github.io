@@ -67,7 +67,7 @@ tags:
  *AKBC@CIKM'13*
  *Citation: 12*
 
-### Method
+## Method
 #### [A Simple Method for Commonsense Reasoning](http://arxiv.org/abs/1806.02847)
  Trieu H. Trinh, Quoc V. Le  
  *Google Brain*
