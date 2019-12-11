@@ -10,7 +10,7 @@ tags:
 # Commonsense
 
 ## Dataset
-#### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
+### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
  Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, Yejin Choi  
  *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*  
  *Allen Institute for Artificial Intelligence, Seattle, USA*  
@@ -28,8 +28,10 @@ tags:
 #### [Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
 #### [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)
 
-## Paper
-### Analysis
+## Evaluation
+####
+
+## Analysis
 #### Reporting bias and knowledge acquisition
  Jonathan Gordon, Benjamin Van Durme  
  *Dept of Computer Science, University of Rochester, Rochester, NY, USA*  
@@ -39,6 +41,7 @@ tags:
 - [Linke of Paper (Citation: 12)](https://dl.acm.org/citation.cfm?id=2509563)
 
 ### Method
+#### A Simple Method for Commonsense Reasoning
 #### COMET: Commonsense Transformers for Automatic Knowledge Graph Construction
  Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi  
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
