@@ -29,6 +29,12 @@ tags:
 ![ATOMIC](/assets/images/Commonsense/ATOMIC.png)
 
 #### [CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge](https://arxiv.org/abs/1811.00937)
+ Alon Talmor, Jonathan Herzig, Nicholas Lourie, Jonathan Berant  
+ *School of Computer Science, Tel-Aviv University*  
+ *Allen Institute for Artificial Intelligence*
+ *NAACL-HLT'19*
+ *Citation: 26*
+
 
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
