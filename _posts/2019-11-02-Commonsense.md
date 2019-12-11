@@ -11,9 +11,9 @@ tags:
 
 ## Survey
 #### [Commonsense reasoning and commonsense knowledge in artificial intelligence](http://dl.acm.org/citation.cfm?doid=2817191.2701413)
- Ernest Davis, Gary Marcus  
- *Dept. of Computer Science, New York University*
- *Citation: 159*
+ Ernest Davis, Gary Marcus   
+ *Dept. of Computer Science, New York University*  
+ *Citation: 159*  
 
 
 ## Dataset
