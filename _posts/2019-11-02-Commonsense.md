@@ -116,6 +116,6 @@ tags:
 
 #### [Commonsense Knowledge Mining from Pretrained Models](http://arxiv.org/abs/1909.00505)
  Joshua Feldman, Joe Davison, Alexander M. Rush  
- *School of Engineering and Applied Sciences, Harvard University*  
- *CoRR'19*
- *Citation: 3*
+ *School of Engineering and Applied Sciences, Harvard University*   
+ *CoRR'19*  
+ *Citation: 3*  
