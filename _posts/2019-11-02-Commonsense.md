@@ -22,6 +22,9 @@ tags:
 ![ATOMIC](/assets/images/Commonsense/ATOMIC.png)
 
 #### [CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge](https://arxiv.org/abs/1811.00937)
+
+- Catation: 26
+
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
 #### [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](http://arxiv.org/abs/1810.12885)
@@ -37,8 +40,16 @@ tags:
  *Microsoft Research*  
  *Virginia Tech*  
  *The Institute for Human & Machine Cognition*  
+ *HLT-NAACL'16*
 
 ## Analysis
+#### [Attention Is (not) All You Need for Commonsense Reasoning](https://www.aclweb.org/anthology/P19-1477)
+ Tassilo Klein, Moin Nabi  
+ *SAP Machine Learning Research, Berlin, Germany*  
+ *ACL'19*
+
+ - Citation: 1
+
 #### Reporting bias and knowledge acquisition
  Jonathan Gordon, Benjamin Van Durme  
  *Dept of Computer Science, University of Rochester, Rochester, NY, USA*  
