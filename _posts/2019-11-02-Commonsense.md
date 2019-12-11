@@ -11,10 +11,10 @@ tags:
 
 ## Dataset
 #### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
- Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, Yejin Choi
- *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*
- *Allen Institute for Artificial Intelligence, Seattle, USA*
- *AAAI'19*
+ Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, Yejin Choi  
+ *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*  
+ *Allen Institute for Artificial Intelligence, Seattle, USA*  
+ *AAAI'19*  
 
 **ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
 
