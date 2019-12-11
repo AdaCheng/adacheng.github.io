@@ -50,7 +50,7 @@ tags:
  *Microsoft Research*  
  *Virginia Tech*  
  *The Institute for Human & Machine Cognition*  
- *HLT-NAACL'16*
+ *HLT-NAACL'16*  
  *Citation: 128*
 
 ## Analysis
