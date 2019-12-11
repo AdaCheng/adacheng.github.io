@@ -40,13 +40,20 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
 - **[Google Flutter X Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader
 
 ## Enjoy Life :)
-- Basketball (Gunner, left-handed)
-    + List of my 'Combat Boots'
-        * NIKE KD 9 Fire Ice
-        * ANTA KT 5 Disco ball
-- Soccer
-    + My favor is [FC Barcelona](https://www.fcbarcelona.cn/), Argentina National Footbal Team and [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi).
-    + My puppy love is Spain National Footbal Team (2010 - 2012).
-- Instruments (Erhu & Piano)
-- [Travel]()
+- Sports
+    - Basketball
+        + List of my 'Combat Boots'
+            * NIKE KD 9 Fire Ice
+            * ANTA KT 5 Disco ball
+    - Soccer
+        + My favor is [FC Barcelona](https://www.fcbarcelona.cn/), Argentina National Footbal Team and [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi).
+        + My puppy love is Spain National Footbal Team (2010 - 2012).
+- Instruments
+    + Erhu
+    + Piano
+- Movies
+    + [Done List]()
+- Travel
+    + [Done List]()
+    + [Wish List]()
 - Writing & Reading
