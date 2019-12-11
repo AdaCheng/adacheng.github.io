@@ -40,6 +40,7 @@ tags:
  *Virginia Tech*  
  *The Institute for Human & Machine Cognition*  
  *HLT-NAACL'16*
+ *Citation: 128*
 
 ## Analysis
 #### [Attention Is (not) All You Need for Commonsense Reasoning](https://www.aclweb.org/anthology/P19-1477)
@@ -74,7 +75,24 @@ tags:
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
  *Paul G. Allen School of Computer Science & Engineering, Seattle, WA, USA*  
  *Microsoft Research, Redmond, WA, USA*  
- *ACL'19*
+ *ACL'19*  
+ *Citation: 3*  
 
- - [Link of Paper (Citation: 3)]()  
  - [Link of Note](https://adacheng.github.io/paper_note/2019/11/02/COMET-Commonsense-Transformers-for-Automatic-Knowledge-Graph/)
+
+#### [Commonsense Knowledge Aware Conversation Generation with Graph Attention](10.24963/ijcai.2018/643)
+ Hao Zhou, Tom Young, Minlie Huang, Haizhou Zhao, Jingfang Xu, Xiaoyan Zhu  
+ *Conversational AI Group, AI Lab., Dept. of Computer Science, Tsinghua University*  
+ *Beijing National Research Center for Information Science and Technology, China*  
+ *School of Information and Electronics, Beijing Institute of Technology, China*   
+ *Sogou Inc., Beijing, China*  
+ *IJCAI'18*
+ *Citation: 51*
+
+#### [Commonsense Knowledge Base Completion](http://aclweb.org/anthology/P16-1137)
+ Xiang Li, Aynaz Taheri, Lifu Tu, Kevin Gimpel  
+ *University of Chicago, Chicago*  
+ *University of Illinois at Chicago, Chicago*  
+ *Toyota Technological Institute at Chicago, Chicago*  
+ *ACL'16*  
+ *Citation: 36*
