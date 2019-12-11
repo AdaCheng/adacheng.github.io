@@ -3,6 +3,7 @@ layout: page
 type: blogs
 ---
 
+## Blogs
 Hi, My World will constantly update some blogs about some subfields in Natural Language Processing. I will recommend some awesome papers according to my preference, and sometimes will also summarize some basic knowledge to help better understand these papers.
 
 ## List of Category and Recommedation
