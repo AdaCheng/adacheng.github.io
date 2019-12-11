@@ -16,7 +16,8 @@ tags:
  *Allen Institute for Artificial Intelligence, Seattle, USA*  
  *AAAI'19*  
 
-**ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
+- Citation: 29
+- **ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
 
 ![ATOMIC](/assets/images/Commonsense/ATOMIC.png)
 
@@ -29,7 +30,13 @@ tags:
 #### [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)
 
 ## Evaluation
-####
+### [A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories](http://aclweb.org/anthology/N16-1098)
+ Nasrin Mostafazadeh, Nathanael Chambers, Xiaodong He, Devi Parikh, Dhruv Batra, Lucy Vanderwende, Pushmeet Kohli, James Allen  
+ *University of Rochester*  
+ *United States Naval Academy*  
+ *Microsoft Research*  
+ *Virginia Tech*  
+ *The Institute for Human & Machine Cognition*  
 
 ## Analysis
 #### Reporting bias and knowledge acquisition
@@ -41,13 +48,17 @@ tags:
 - [Linke of Paper (Citation: 12)](https://dl.acm.org/citation.cfm?id=2509563)
 
 ### Method
-#### A Simple Method for Commonsense Reasoning
-#### COMET: Commonsense Transformers for Automatic Knowledge Graph Construction
+#### [A Simple Method for Commonsense Reasoning](http://arxiv.org/abs/1806.02847)
+ Trieu H. Trinh, Quoc V. Le  
+ *Google Brain*
+ *CoRR'18*
+
+#### [COMET: Commonsense Transformers for Automatic Knowledge Graph Construction](https://arxiv.org/abs/1906.05317)
  Antoine Bosselut, Hannah Rashkin, Maarten Sap, Chaitanya Malaviya, Asli Celikyilmaz, Yejin Choi  
  *Allen Institute for Artificial Intelligence, Seattle, WA, USA*  
  *Paul G. Allen School of Computer Science & Engineering, Seattle, WA, USA*  
  *Microsoft Research, Redmond, WA, USA*  
  *ACL'19*
 
- - [Link of Paper (Citation: 3)](https://arxiv.org/abs/1906.05317)  
+ - [Link of Paper (Citation: 3)]()  
  - [Link of Note](https://adacheng.github.io/paper_note/2019/11/02/COMET-Commonsense-Transformers-for-Automatic-Knowledge-Graph/)
