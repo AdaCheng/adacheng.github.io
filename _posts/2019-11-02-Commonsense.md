@@ -10,6 +10,11 @@ tags:
 # Commonsense
 
 ## Survey
+#### [Commonsense reasoning and commonsense knowledge in artificial intelligence](http://dl.acm.org/citation.cfm?doid=2817191.2701413)
+ Ernest Davis, Gary Marcus  
+ *Dept. of Computer Science, New York University*
+ *Citation: 159*
+
 
 ## Dataset
 #### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
@@ -24,6 +29,7 @@ tags:
 ![ATOMIC](/assets/images/Commonsense/ATOMIC.png)
 
 #### [CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge](https://arxiv.org/abs/1811.00937)
+
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
 #### [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](http://arxiv.org/abs/1810.12885)
@@ -96,3 +102,15 @@ tags:
  *Toyota Technological Institute at Chicago, Chicago*  
  *ACL'16*  
  *Citation: 36*
+
+#### [Commonsense Knowledge Base Completion and Generation](http://aclweb.org/anthology/K18-1014)
+ Itsumi Saito, Kyosuke Nishida, Hisako Asano, Junji Tomita  
+ *NTT Media Intelligence Laboratories*  
+ *CONLL'18*
+ *Citation: 7*
+
+#### [Commonsense Knowledge Mining from Pretrained Models](http://arxiv.org/abs/1909.00505)
+ Joshua Feldman, Joe Davison, Alexander M. Rush  
+ *School of Engineering and Applied Sciences, Harvard University*  
+ *CoRR'19*
+ *Citation: 3*
