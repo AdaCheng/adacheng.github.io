@@ -10,7 +10,7 @@ tags:
 # Commonsense
 
 ## Dataset
-### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
+#### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
  Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, Yejin Choi  
  *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*  
  *Allen Institute for Artificial Intelligence, Seattle, USA*  
