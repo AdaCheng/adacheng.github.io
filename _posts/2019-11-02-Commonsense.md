@@ -22,6 +22,16 @@ tags:
  *Citation: 42*  
 
 ## Dataset
+#### [A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories](http://aclweb.org/anthology/N16-1098)
+ Nasrin Mostafazadeh, Nathanael Chambers, Xiaodong He, Devi Parikh, Dhruv Batra, Lucy Vanderwende, Pushmeet Kohli, James Allen  
+ *University of Rochester*  
+ *United States Naval Academy*  
+ *Microsoft Research*  
+ *Virginia Tech*  
+ *The Institute for Human & Machine Cognition*  
+ *HLT-NAACL'16*  
+ *Citation: 128*
+
 #### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
  Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, Yejin Choi  
  *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*  
@@ -80,17 +90,6 @@ tags:
  *ACL'17*  
  *Citation: 17*  
 
-## Evaluation
-#### [A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories](http://aclweb.org/anthology/N16-1098)
- Nasrin Mostafazadeh, Nathanael Chambers, Xiaodong He, Devi Parikh, Dhruv Batra, Lucy Vanderwende, Pushmeet Kohli, James Allen  
- *University of Rochester*  
- *United States Naval Academy*  
- *Microsoft Research*  
- *Virginia Tech*  
- *The Institute for Human & Machine Cognition*  
- *HLT-NAACL'16*  
- *Citation: 128*
-
 ## Analysis
 #### [Attention Is (not) All You Need for Commonsense Reasoning](https://www.aclweb.org/anthology/P19-1477)
  Tassilo Klein, Moin Nabi  
@@ -104,6 +103,14 @@ tags:
  *University of Washington, Seattle, WA, USA*  
  *COIN@EMNLP*  
  *Citation: 0*
+
+#### [Evaluating Commonsense in Pre-trained Language Models](http://arxiv.org/abs/1911.11931)
+  Xuhui Zhou, Yue Zhang, Leyang Cui, Dandan Huang  
+  *University of Washington*  
+  *School of Engineering, Westlake University*  
+  *Zhejiang University*  
+  *AAAI'20*  
+  *Citation: 0*
 
 #### [Language Models as Knowledge Bases?](http://arxiv.org/abs/1909.01066)
  Fabio Petroni, Tim Rocktaschelk, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel  
