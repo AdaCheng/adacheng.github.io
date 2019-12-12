@@ -15,6 +15,11 @@ tags:
  *Dept. of Computer Science, New York University*  
  *Citation: 159*  
 
+#### [Types of Common-Sense Knowledge Needed for Recognizing Textual Entailment](https://www.aclweb.org/anthology/P11-2057)
+ Peter LoBue, Alexander Yates
+ *Temple University*
+ *ACL'11*  
+ *Citation: 42*  
 
 ## Dataset
 #### [ATOMIC: An Atlas of Machine Commonsense for If-Then Reasoning](https://arxiv.org/abs/1811.00146)
@@ -69,6 +74,11 @@ tags:
  *Citation: 298*  
 
 #### [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)
+ Maxwell Forbes, Yejin Choi  
+ *Paul G. Allen School of Computer Science & Engineering*  
+ *University of Washington*  
+ *ACL'17*  
+ *Citation: 17*  
 
 ## Evaluation
 #### [A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories](http://aclweb.org/anthology/N16-1098)
@@ -108,6 +118,16 @@ tags:
  *HLTCOE, Johns Hopkins University, Baltimore, MD, USA*  
  *AKBC@CIKM'13*
  *Citation: 12*
+
+#### [What do you learn from context? Probing for sentence structure in contextualized word representations](http://arxiv.org/abs/1905.06316)
+ Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R. Thomas McCoy, Najoung Kim, Benjamin Van Durme, Samuel R. Bowman, Dipanjan Das, Ellie Pavlick  
+ *Google AI Language*  
+ *Johns Hopkins University*  
+ *Swarthmore College*  
+ *New York University*  
+ *Brown University*  
+ *ICLR'19*  
+ *Citation: 51*
 
 ## Method
 #### [A Simple Method for Commonsense Reasoning](http://arxiv.org/abs/1806.02847)
