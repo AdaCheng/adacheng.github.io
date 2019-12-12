@@ -36,7 +36,16 @@ tags:
  *Citation: 26*  
 
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
+ H Liu，P Singh
+ *Citation: 1452*
+
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
+ Hannah Rashkin, Maarten Sap, Emily Allaway, Noah A. Smith, Yejin Choi  
+ *Paul G. Allen School of Computer Science & Engineering, University of Washington*  
+ *Allen Institute for Artificial Intelligence*  
+ *ACL'18*
+ *Citation: 22*  
+
 #### [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](http://arxiv.org/abs/1810.12885)
 #### [SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference](http://arxiv.org/abs/1808.05326)
 #### [Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
@@ -59,6 +68,13 @@ tags:
  *SAP Machine Learning Research, Berlin, Germany*  
  *ACL'19*  
  *Citation: 1*  
+
+#### [Cracking the Contextual Commonsense Code: Understanding Commonsense Reasoning Aptitude of Deep Contextual Representations](http://arxiv.org/abs/1910.01157)
+ Jeff Da, Jungo Kasai  
+ *Paul G. Allen School of Computer Science & Engineering*  
+ *University of Washington, Seattle, WA, USA*  
+ *COIN@EMNLP*  
+ *Citation: 0*
 
 #### [Reporting bias and knowledge acquisition](https://dl.acm.org/citation.cfm?id=2509563)
  Jonathan Gordon, Benjamin Van Durme  
@@ -119,3 +135,22 @@ tags:
  *School of Engineering and Applied Sciences, Harvard University*   
  *CoRR'19*  
  *Citation: 3*  
+
+#### [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://www.aclweb.org/anthology/P19-1487)
+ Nazneen Fatema Rajani, Bryan McCann, Caiming Xiong, Richard Socher   
+ *Salesforce Research*  
+ *ACL'19*
+ *Citaion: 8*
+
+#### [Exploiting Structural and Semantic Context for Commonsense Knowledge Base Completion](http://arxiv.org/abs/1910.02915)
+ Chaitanya Malaviya, Chandra Bhagavatula, Antoine Bosselut, Yejin Choi 
+ *Allen Institute for Artificial Intelligence*  
+ *University of Washington*  
+ *CoRR'19*   
+ *Citation: 1*  
+
+#### [Incorporating Context and External Knowledge for Pronoun Coreference Resolution](http://arxiv.org/abs/1905.10238)
+ Hongming Zhang, Yan Song, Yangqiu Song  
+ *Department of CSE, The Hong Kong University of Science and Technology*  
+ *Tencent AI Lab*  
+ *NAACL-HLT'19*
