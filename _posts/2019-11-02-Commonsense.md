@@ -153,4 +153,8 @@ tags:
  Hongming Zhang, Yan Song, Yangqiu Song  
  *Department of CSE, The Hong Kong University of Science and Technology*  
  *Tencent AI Lab*  
- *NAACL-HLT'19*
+ *NAACL-HLT'19*  
+ *Citation: 3*  
+
+#### [KagNet: Knowledge-Aware Graph Networks for Commonsense Reasoning](http://arxiv.org/abs/1909.02151)
+ Bill Yuchen Lin, Xinyue Chen, Jamin Chen, Xiang Ren
