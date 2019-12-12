@@ -54,6 +54,6 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
 - Movies
     + [Done List](https://adacheng.github.io/others/2019/12/11/Movie-Done-List/)
 - Travel
-    + [Done List]()
+    + [Done List](https://adacheng.github.io/others/2019/12/12/Travel-Done-List/)
     + [Wish List]()
 - Writing & Reading
