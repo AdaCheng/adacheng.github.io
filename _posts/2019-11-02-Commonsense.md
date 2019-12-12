@@ -17,7 +17,7 @@ tags:
 
 #### [Types of Common-Sense Knowledge Needed for Recognizing Textual Entailment](https://www.aclweb.org/anthology/P11-2057)
  Peter LoBue, Alexander Yates
- *Temple University*
+ *Temple University*  
  *ACL'11*  
  *Citation: 42*  
 
@@ -41,7 +41,7 @@ tags:
  *Citation: 26*  
 
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
- H Liu，P Singh
+ H Liu，P Singh  
  *Citation: 1452*  
 
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
@@ -116,7 +116,7 @@ tags:
  Jonathan Gordon, Benjamin Van Durme  
  *Dept of Computer Science, University of Rochester, Rochester, NY, USA*  
  *HLTCOE, Johns Hopkins University, Baltimore, MD, USA*  
- *AKBC@CIKM'13*
+ *AKBC@CIKM'13*  
  *Citation: 12*
 
 #### [What do you learn from context? Probing for sentence structure in contextualized word representations](http://arxiv.org/abs/1905.06316)
@@ -132,9 +132,9 @@ tags:
 ## Method
 #### [A Simple Method for Commonsense Reasoning](http://arxiv.org/abs/1806.02847)
  Trieu H. Trinh, Quoc V. Le  
- *Google Brain*
- *CoRR'18*
- *Citation: 44*
+ *Google Brain*  
+ *CoRR'18*  
+ *Citation: 44*  
 
 #### [BIG MOOD: Relating Transformers to Explicit Commonsense Knowledge](http://arxiv.org/abs/1910.07713)
  Jeff Da  
@@ -158,23 +158,23 @@ tags:
  *Conversational AI Group, AI Lab., Dept. of Computer Science, Tsinghua University*  
  *Beijing National Research Center for Information Science and Technology, China*  
  *School of Information and Electronics, Beijing Institute of Technology, China*   
- *Sogou Inc., Beijing, China*  
- *IJCAI'18*
- *Citation: 51*
+ *Sogou Inc., Beijing, China*    
+ *IJCAI'18*  
+ *Citation: 51*  
 
 #### [Commonsense Knowledge Base Completion](http://aclweb.org/anthology/P16-1137)
  Xiang Li, Aynaz Taheri, Lifu Tu, Kevin Gimpel  
  *University of Chicago, Chicago*  
  *University of Illinois at Chicago, Chicago*  
  *Toyota Technological Institute at Chicago, Chicago*  
- *ACL'16*  
+ *ACL'16*   
  *Citation: 36*
 
 #### [Commonsense Knowledge Base Completion and Generation](http://aclweb.org/anthology/K18-1014)
  Itsumi Saito, Kyosuke Nishida, Hisako Asano, Junji Tomita  
  *NTT Media Intelligence Laboratories*  
- *CONLL'18*
- *Citation: 7*
+ *CONLL'18*  
+ *Citation: 7*  
 
 #### [Commonsense Knowledge Mining from Pretrained Models](http://arxiv.org/abs/1909.00505)
  Joshua Feldman, Joe Davison, Alexander M. Rush  
@@ -185,8 +185,8 @@ tags:
 #### [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://www.aclweb.org/anthology/P19-1487)
  Nazneen Fatema Rajani, Bryan McCann, Caiming Xiong, Richard Socher   
  *Salesforce Research*  
- *ACL'19*
- *Citaion: 8*
+ *ACL'19*  
+ *Citaion: 8*  
 
 #### [Exploiting Structural and Semantic Context for Commonsense Knowledge Base Completion](http://arxiv.org/abs/1910.02915)
  Chaitanya Malaviya, Chandra Bhagavatula, Antoine Bosselut, Yejin Choi 
