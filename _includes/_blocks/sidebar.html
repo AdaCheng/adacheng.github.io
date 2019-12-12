@@ -2,6 +2,9 @@
 {% when 'index' %}
   {% assign is_post = false %}
   {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'about' %}
+  {% assign is_post = true %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %} 
 {% when 'post' %}
   {% assign is_post = true %}
   {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}

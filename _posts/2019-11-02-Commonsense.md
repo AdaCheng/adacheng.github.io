@@ -22,7 +22,7 @@ tags:
  *Paul G. Allen School of Computer Science & Engineering, University of Washington, Seattle, USA*  
  *Allen Institute for Artificial Intelligence, Seattle, USA*  
  *AAAI'19*  
- *Citation: 29*
+ *Citation: 29*  
 
 - **ATOMIC** focuses on inferential knowledge organized as typed *If-Then* relations. It has three types of *If-Then* knowledge, and nine new inferential dimensions. This knowledge graph contains 877k triples, 309K nodes, collected using 24K base events. The link for downloading the data is [here](https://storage.googleapis.com/ai2-mosaic/public/atomic/v1.0/atomic_data.tgz).
 
@@ -37,18 +37,37 @@ tags:
 
 #### [ConceptNet -- A Practical Commonsense Reasoning Tool-kit](https://link.springer.com/article/10.1023/B:BTTJ.0000047600.45421.6d)
  H Liu，P Singh
- *Citation: 1452*
+ *Citation: 1452*  
 
 #### [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](http://arxiv.org/abs/1805.06939)
  Hannah Rashkin, Maarten Sap, Emily Allaway, Noah A. Smith, Yejin Choi  
  *Paul G. Allen School of Computer Science & Engineering, University of Washington*  
  *Allen Institute for Artificial Intelligence*  
- *ACL'18*
+ *ACL'18*  
  *Citation: 22*  
 
 #### [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](http://arxiv.org/abs/1810.12885)
+ Sheng Zhang, Xiaodong Liu, Jingjing Liu, Jianfeng Gao, Kevin Duh, Benjamin Van Durme  
+ *Johns Hopkins University*  
+ *Microsoft Research*  
+ *CoRR'18*  
+ *Citation: 17*  
+
 #### [SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference](http://arxiv.org/abs/1808.05326)
-#### [Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
+ Rowan Zellers, Yonatan Bisk, Roy Schwartz, Yejin Choi  
+ *Paul G. Allen School of Computer Science & Engineering, University of Washington*  
+ *Allen Institute for Artificial Intelligence*  
+ *EMNLP'18*  
+ *Citation: 77*  
+
+#### [The Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
+ Hector J. Levesque, Ernest Davis, Leora Morgenstern  
+ *Dept. of Computer Science, University of Toronto*  
+ *Dept. of Computer Science, New York University*  
+ *S.A.I.C*  
+ *KR'12*  
+ *Citation: 298*  
+
 #### [Verb Physics: Relative Physical Knowledge of Actions and Objects](http://arxiv.org/abs/1706.03799)
 
 ## Evaluation
@@ -75,6 +94,13 @@ tags:
  *University of Washington, Seattle, WA, USA*  
  *COIN@EMNLP*  
  *Citation: 0*
+
+#### [Language Models as Knowledge Bases?](http://arxiv.org/abs/1909.01066)
+ Fabio Petroni, Tim Rocktaschelk, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel  
+ *Facebook AI Research*  
+ *University College London*  
+ *EMNLP'19*  
+ *Citation: 9*
 
 #### [Reporting bias and knowledge acquisition](https://dl.acm.org/citation.cfm?id=2509563)
  Jonathan Gordon, Benjamin Van Durme  
@@ -157,4 +183,31 @@ tags:
  *Citation: 3*  
 
 #### [KagNet: Knowledge-Aware Graph Networks for Commonsense Reasoning](http://arxiv.org/abs/1909.02151)
- Bill Yuchen Lin, Xinyue Chen, Jamin Chen, Xiang Ren
+ Bill Yuchen Lin, Xinyue Chen, Jamin Chen, Xiang Ren  
+ *Computer Science Department, University of Southern California*  
+ *Computer Science Department, Shanghai Jiao Tong University*  
+ *EMNLP-IJCNLP'19*  
+ *Citation: 4*  
+
+#### [Knowledge-aware Pronoun Coreference Resolution](http://arxiv.org/abs/1907.03663)
+ Hongming Zhang, Yan Song, Yangqiu Song, Dong Yu  
+ *Department of CSE, The Hong Kong University of Science and Technology*  
+ *Tencent AI Lab*  
+ *ACL'19*  
+ *Citation: 1*  
+
+#### [Reasoning With Neural Tensor Networks for Knowledge Base Completion](https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion)
+ Richard Socher, Danqi Chen, Christopher D. Manning, Andrew Y. Ng  
+ *Computer Science Department, Stanford University, Stanford*  
+ *NIPS'13*  
+ *Citation: 1032*  
+
+#### [Story Ending Generation with Incremental Encoding and Commonsense Knowledge](http://arxiv.org/abs/1808.10113)
+ Jian Guan, Yansen Wang, Minlie Huang  
+ *Dept. of Computer Science & Technology, Tsinghua University*  
+ *Institute for Artificial IntelligenceTsinghua University (THUAI)*  
+ *Beijing National Research Center for Information Science and Technology*  
+ *Dept. of Physics, Tsinghua University*  
+ *AAAI'19*  
+ *Citation: 13*  
+
