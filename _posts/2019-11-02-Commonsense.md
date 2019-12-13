@@ -101,7 +101,7 @@ tags:
  Jeff Da, Jungo Kasai  
  *Paul G. Allen School of Computer Science & Engineering*  
  *University of Washington, Seattle, WA, USA*  
- *COIN@EMNLP*  
+ *COIN@EMNLP'19*  
  *Citation: 0*
 
 #### [Evaluating Commonsense in Pre-trained Language Models](http://arxiv.org/abs/1911.11931)
