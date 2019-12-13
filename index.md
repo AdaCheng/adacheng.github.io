@@ -48,12 +48,13 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
     - Soccer
         + My favor is [FC Barcelona](https://www.fcbarcelona.cn/), Argentina National Footbal Team and [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi).
         + My puppy love is Spain National Footbal Team (2010 - 2012).
-- Instruments
-    + Erhu
-    + Piano
+    - Jogging
 - Movies
     + [Done List](https://adacheng.github.io/others/2019/12/11/Movie-Done-List/)
 - Travel
     + [Done List](https://adacheng.github.io/others/2019/12/12/Travel-Done-List/)
     + [Wish List]()
+- Erhu & Piano
+- Calligraphy & Painting
 - Writing & Reading
+- Tea & Wine & Coffee Culture
