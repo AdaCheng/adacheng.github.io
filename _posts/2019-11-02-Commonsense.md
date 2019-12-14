@@ -136,6 +136,14 @@ tags:
  *ICLR'19*  
  *Citation: 51*
 
+#### [What Does BERT Look at? An Analysis of BERT’s Attention](https://www.aclweb.org/anthology/W19-4828)
+ Kevin Clark, Urvashi Khandelwal, Omer Levy, Christopher D. Manning  
+ *Computer Science Department, Stanford University*  
+ *Facebook AI Research*  
+ *ACL'19*  
+ *Citation: 25*
+
+
 ## Method
 #### [A Simple Method for Commonsense Reasoning](http://arxiv.org/abs/1806.02847)
  Trieu H. Trinh, Quoc V. Le  
