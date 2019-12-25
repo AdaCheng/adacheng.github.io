@@ -90,6 +90,7 @@ tags:
     + Now You See Me (惊天魔盗团)
     + Mission: Impossible - Fallout (碟中谍6：全面瓦解)
     + 无双
+    + 会计刺客 (The Accountant)
 - 传记
     + The Last Emperor (末代皇帝)
     + A Beautiful Mind (美丽心灵)
