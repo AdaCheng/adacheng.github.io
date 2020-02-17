@@ -39,7 +39,7 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
 - **[Leiphone Fansub](https://www.yanxishe.com/translation)**, [Team Leader of Speech and Semantic Subtitle Group](https://www.yanxishe.com/translation/6)
 - **[Google Flutter X Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader
 
-## Enjoy Life :)
+<!-- ## Enjoy Life :)
 - Sports
     - Basketball
         + List of my 'Combat Boots'
@@ -57,4 +57,4 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
 - Erhu & Piano
 - Calligraphy & Painting
 - Writing & Reading
-- Tea & Wine & Coffee Culture
+- Tea & Wine & Coffee Culture -->
