@@ -24,7 +24,7 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
     + Member of Laboratory, Sept. 2017 - Jun. 2019
     + Research Field: Natural Language Processing
 
-## Recent Talk
+<!-- ## Recent Talk
 - Talk at [MSRA Ada Workshop](https://www.msra.cn/zh-cn/news/outreach-articles/ada-workshop-%E4%BA%88%E5%8A%9B%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%A2%86%E5%9F%9F%E6%AF%8F%E4%B8%80%E4%BD%8D%E5%A5%B3%E6%80%A7%EF%BC%8C%E6%88%90%E5%B0%B1%E4%B8%8D%E5%87%A1), Mar. 2019
 - Opening statement at [Students Open Source Conference](https://openingsource.org/special/soscon18/), Jun. 2018
 
@@ -37,7 +37,7 @@ I am a fourth-year undergraduate. I will work in the **[Knowledge Works Research
 ## Community
 - **CQUPT Artificial Intelligence Association**, Founder & Association President
 - **[Leiphone Fansub](https://www.yanxishe.com/translation)**, [Team Leader of Speech and Semantic Subtitle Group](https://www.yanxishe.com/translation/6)
-- **[Google Flutter X Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader
+- **[Google Flutter X Chinese Universities Team](https://flutter.cn/about/docs-cn)**, Team Leader -->
 
 <!-- ## Enjoy Life :)
 - Sports
