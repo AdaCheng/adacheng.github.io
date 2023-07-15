@@ -63,6 +63,22 @@ sections:
           date_start: '2021-07-01'
           date_end: '2022-02-01'
           description: Large models as continual knowledge bases, advised by Prof. [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly/) and Prof. [Yang Liu](https://sites.google.com/site/yangliuveronica/).
+        - title: Research Intern
+          company: Natural Language Understanding Group, Meituan NLP Center
+          company_url: 'https://about.meituan.com/home' 
+          company_logo: org-meituan
+          location: Beijing, China
+          date_start: '2020-11-01'
+          date_end: '2021-06-01'
+          description: Taxonomy relational knowledge extraction, working with [Rui Xie](https://scholar.google.com/citations?hl=en&user=_GaB4AQAAAAJ). -> **ICDE 2022** and **ACL 2022**
+        - title: Visiting Fellow
+          company: Text Intelligence Lab, Westlake University
+          company_url: 'https://www.westlake.edu.cn/' 
+          company_logo: org-westlake
+          location: Hangzhou, China
+          date_start: '2019-09-01'
+          date_end: '2020-09-01'
+          description: Analysis of commonsense knowledge in pre-trained language model, advised by Prof. [Yue Zhang](https://frcchang.github.io/). -> **ACL 2021**
     design:
       columns: '2'
   - block: accomplishments
