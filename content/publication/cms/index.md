@@ -34,12 +34,11 @@ publication_short: In *ACL-IJCNLP 2021*
 abstract: BERT has been used for solving commonsense tasks such as CommonsenseQA. While prior research has found that BERT does contain commonsense information to some extent, there has been work showing that pre-trained models can rely on spurious associations (e.g., data bias) rather than key cues in solving sentiment classification and other problems. We quantitatively investigate the presence of structural commonsense cues in BERT when solving commonsense tasks, and the importance of such cues for the model prediction. Using two different measures, we find that BERT does use relevant knowledge for solving the task, and the presence of commonsense knowledge is positively correlated to the model accuracy.
 
 # Summary. An optional shortened abstract.
-# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-
+summary: This study examines how BERT utilizes commonsense cues when solving commonsense tasks. We find that BERT incorporates structural commonsense knowledge, positively impacting its accuracy in these tasks.
 tags: [Foundation Models]
 
 # Display this page in the Featured widget?
-featured: False
+featured: True
 
 # Custom links (uncomment lines below)
 # links:
