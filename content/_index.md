@@ -78,46 +78,6 @@ sections:
           description: Analysis of commonsense knowledge in pre-trained language model, advised by Prof. [Yue Zhang](https://frcchang.github.io/). -> **ACL 2021**
     design:
       columns: '2'
-  - block: accomplishments
-    id: awards
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Awards'
-      subtitle:
-      # Date format: https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - certificate_url: 'https://cs.fudan.edu.cn/6f/16/c24284a487190/page.htm'
-          date_end: ''
-          date_start: '2023-03-29'
-          description: ''
-          organization: Shanghai
-          organization_url: ''
-          title: Excellent Graduates
-          url: ''
-        - certificate_url: 'https://cs.fudan.edu.cn/0a/28/c24284a461352/page.htm'
-          date_end: ''
-          date_start: '2022-10-08'
-          description: ''
-          organization: China
-          organization_url: ''
-          title: National Scholarship
-          url: ''
-        - certificate_url: ''
-          date_end: ''
-          date_start: '2020-12-05'
-          description: ''
-          organization: Fudan University
-          organization_url: ''
-          title: 1st Place in Women’s Basketball Graduate School Cup
-          url: ''
-    design:
-      columns: '2'
 #  - block: collection
 #    id: posts
 #    content:
@@ -205,6 +165,46 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
+  - block: accomplishments
+    id: awards
+    content:
+      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
+      title: 'Awards'
+      subtitle:
+      # Date format: https://wowchemy.com/docs/customization/#date-format
+      date_format: Jan 2006
+      # Accomplishments.
+      #   Add/remove as many `item` blocks below as you like.
+      #   `title`, `organization`, and `date_start` are the required parameters.
+      #   Leave other parameters empty if not required.
+      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      items:
+        - certificate_url: 'https://cs.fudan.edu.cn/6f/16/c24284a487190/page.htm'
+          date_end: ''
+          date_start: '2023-03-29'
+          description: ''
+          organization: Shanghai
+          organization_url: ''
+          title: Excellent Graduates
+          url: ''
+        - certificate_url: 'https://cs.fudan.edu.cn/0a/28/c24284a461352/page.htm'
+          date_end: ''
+          date_start: '2022-10-08'
+          description: ''
+          organization: China
+          organization_url: ''
+          title: National Scholarship
+          url: ''
+        - certificate_url: ''
+          date_end: ''
+          date_start: '2020-12-05'
+          description: ''
+          organization: Fudan University
+          organization_url: ''
+          title: 1st Place in Women’s Basketball Graduate School Cup
+          url: ''
+    design:
+      columns: '2'
 #  - block: collection
 #    id: talks
 #    content:
