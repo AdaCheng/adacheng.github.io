@@ -1,6 +1,6 @@
 ---
 title: OpenChat
-summary: OpenChat: Advancing Open-source Language Models with Imperfect Data
+summary: Advancing Open-source Language Models with Imperfect Data
 tags:
   - Demo
 date: "2023-07-01T00:00:00Z"
