@@ -24,6 +24,7 @@ sections:
 #          icon: chart-line
 #          icon_pack: fas
   - block: experience
+    id: experience
     content:
       title: Experience
       # Date format for experience
@@ -143,6 +144,25 @@ sections:
       # Choose a layout view
 #      view: compact
 #      columns: '2'
+#  - block: markdown
+#    content:
+#      title: Gallery
+#      subtitle: ''
+#      text: |-
+#        {{< gallery album="demo" >}}
+#    design:
+#      columns: '1'
+#  - block: collection
+#    id: featured
+#    content:
+#      title: Featured Publications
+#      filters:
+#        folders:
+#          - publication
+#        featured_only: true
+#    design:
+#      columns: '2'
+#      view: card
   - block: portfolio
     id: projects
     content:
@@ -170,25 +190,6 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-#  - block: markdown
-#    content:
-#      title: Gallery
-#      subtitle: ''
-#      text: |-
-#        {{< gallery album="demo" >}}
-#    design:
-#      columns: '1'
-#  - block: collection
-#    id: featured
-#    content:
-#      title: Featured Publications
-#      filters:
-#        folders:
-#          - publication
-#        featured_only: true
-#    design:
-#      columns: '2'
-#      view: card
   - block: collection
     id: publication
     content:
