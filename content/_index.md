@@ -82,7 +82,7 @@ sections:
     id: awards
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'awards'
+      title: 'Awards'
       subtitle:
       # Date format: https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -107,6 +107,14 @@ sections:
           organization: China
           organization_url: ''
           title: National Scholarship
+          url: ''
+        - certificate_url: ''
+          date_end: ''
+          date_start: '2020-12-05'
+          description: ''
+          organization: Fudan University
+          organization_url: ''
+          title: 1st Place in Women’s Basketball Graduate School Cup
           url: ''
     design:
       columns: '2'
