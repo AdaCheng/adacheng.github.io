@@ -47,16 +47,24 @@ sections:
           date_start: '2023-02-01'
           date_end: ''
           description: Investigation for Artificial Intelligence, working with Bobing Ren.
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
-    design:
-      columns: '2'
+        - title: Research Intern
+          company: Natural Language Processing Group, Pujiang Lab
+          company_url: 'https://www.shlab.org.cn/aboutus'
+          company_logo: org-pjlab
+          location: Shanghai, China
+          date_start: '2022-03-01'
+          date_end: '2022-12-01'
+          description: Free-text explanation for reasoning, working with Prof. [Lingpeng Kong](https://ikekonglp.github.io/).
+        - title: Visiting Fellow
+          company: Institue for AI Industry Research, Tsinghua University
+          company_url: 'https://air.tsinghua.edu.cn/'
+          company_logo: org-thu
+          location: Beijing, China
+          date_start: '2021-07-01'
+          date_end: '2022-02-01'
+          description: Large models as continual knowledge bases, advised by Prof. [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly/) and Prof. [Yang Liu](https://sites.google.com/site/yangliuveronica/).
+      design:
+        columns: '2'
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
