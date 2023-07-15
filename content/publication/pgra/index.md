@@ -40,7 +40,7 @@ abstract: Retrieval-augmented methods have received increasing attention to supp
 tags: [Foundation Models]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

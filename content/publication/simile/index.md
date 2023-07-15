@@ -40,7 +40,7 @@ abstract: Simile interpretation is a crucial task in natural language processing
 tags: [Foundation Models]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

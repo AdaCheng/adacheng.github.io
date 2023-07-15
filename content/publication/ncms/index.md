@@ -40,7 +40,7 @@ abstract: Large language models (LLMs) have been widely studied for their abilit
 tags: [Commonsense]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
