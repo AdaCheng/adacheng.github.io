@@ -179,7 +179,7 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: 'https://cs.fudan.edu.cn/6f/16/c24284a487190/page.htm'
+        - certificate_url: ''
           date_end: ''
           date_start: '2023-03-29'
           description: ''
@@ -187,7 +187,7 @@ sections:
           organization_url: ''
           title: Excellent Graduates
           url: ''
-        - certificate_url: 'https://cs.fudan.edu.cn/0a/28/c24284a461352/page.htm'
+        - certificate_url: ''
           date_end: ''
           date_start: '2022-10-08'
           description: ''
