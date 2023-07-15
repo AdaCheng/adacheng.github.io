@@ -166,10 +166,10 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Large (Language) Models as Knowledge Base
+      title: Featured Publications
       filters:
         folders:
-          - LLMs
+          - publication
         featured_only: true
     design:
       columns: '2'
