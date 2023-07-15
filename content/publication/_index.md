@@ -1,5 +1,5 @@
 ---
-title: Large (Language) Models as Knowledge Base
+title: Publications
 cms_exclude: true
 
 # View.
