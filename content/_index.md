@@ -23,7 +23,7 @@ sections:
 #          description: 100%
 #          icon: chart-line
 #          icon_pack: fas
-  - block: collection
+  - block: github.adacheng.news
     id: news
     content:
       title: News
