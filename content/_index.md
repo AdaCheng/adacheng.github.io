@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: <ul><li><strong>Sep. 2023:</strong> Our paper of OpenChat has been <a href="https://arxiv.org/abs/2309.11235">released</a>.</li><br><li>add</li><br>
+      text: <ul><li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat</a> has been released.</li><br><li>add</li><br>
     design:
       columns: '2' 
   - block: experience
