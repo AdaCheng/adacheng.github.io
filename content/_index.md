@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: <ul><li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat&#58; Advancing Open-source Language Models with Mixed-Quality Data</a> has been released!</li>      <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2305.17650">Evolving Connectivity for Recurrent Spiking Neural Networks</a> has been accepted by NeurIPS 2023!</li>      <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2307.02752">Offline Reinforcement Learning with Imbalanced Datasets</a> has been accepted by ICML Workshop 2023!</li>
+      text: <ul><li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat&#58; Advancing Open-source Language Models with Mixed-Quality Data</a> has been released!</li>      <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2305.17650">Evolving Connectivity for Recurrent Spiking Neural Networks</a> has been accepted by NeurIPS 2023!</li>      <li><strong>Jul. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2307.02752">Offline Reinforcement Learning with Imbalanced Datasets</a> has been accepted by ICML Workshop 2023!</li>
     design:
       columns: '2' 
   - block: experience
