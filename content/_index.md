@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: <ul><li><strong>Sep. 2023:</strong> We have released <a href="https://arxiv.org/abs/2309.11235">"OpenChat: Advancing Open-source Language Models with Mixed-Quality Data"</a>. </li><br><li>add</li><br>
+      text: <ul><li><strong>Sep. 2023:</strong> We have released <a href="https://arxiv.org/abs/2309.11235">"OpenChat Advancing Open-source Language Models with Mixed-Quality Data"</a>. </li><br><li>add</li><br>
     design:
       columns: '2'
   - block: experience
