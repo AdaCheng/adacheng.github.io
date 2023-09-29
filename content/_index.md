@@ -27,8 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text:  
-      * **[2023/09/20]** OpenChat
+      text: * **[2023/09/20]** OpenChat <br>
     design:
       columns: '2'
   - block: experience
