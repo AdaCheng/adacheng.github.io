@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: add **2023** OpenChat <br> add
+      text: <ul><li>add **2023** OpenChat</li><br><li>add</li><br>
     design:
       columns: '2'
   - block: experience
