@@ -23,7 +23,7 @@ sections:
 #          description: 100%
 #          icon: chart-line
 #          icon_pack: fas
-  - block: news
+  - block: collection
     id: news
     content:
       title: News
