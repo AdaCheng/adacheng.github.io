@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: <ul><li>add **2023** OpenChat</li><br><li>add</li><br>
+      text: <ul><li><strong>[09/20/2023]<strong> OpenChat</li><br><li>add</li><br>
     design:
       columns: '2'
   - block: experience
