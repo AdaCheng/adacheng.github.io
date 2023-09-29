@@ -23,13 +23,6 @@ sections:
 #          description: 100%
 #          icon: chart-line
 #          icon_pack: fas
-  - block: news
-    id: news
-    content:
-      title: News
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
-    design:
-      columns: '2'
   - block: experience
     id: experience
     content:
