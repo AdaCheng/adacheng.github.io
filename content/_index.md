@@ -23,6 +23,12 @@ sections:
 #          description: 100%
 #          icon: chart-line
 #          icon_pack: fas
+  - block: news
+    id: news
+    content:
+      title: News
+    design:
+      columns: '2'
   - block: experience
     id: experience
     content:
