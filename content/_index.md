@@ -27,7 +27,7 @@ sections:
     id: news
     content:
       title: News
-      text: <ul><li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat&#58; Advancing Open-source Language Models with Mixed-Quality Data</a> has been released!</li>      <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2305.17650">Evolving Connectivity for Recurrent Spiking Neural Networks</a> has been accepted by NeurIPS 2023!</li>      <li><strong>Jul. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2307.02752">Offline Reinforcement Learning with Imbalanced Datasets</a> has been accepted by ICML Workshop 2023!</li>      <li><strong>May 2023:</strong> Three papers have been accepted by ACL 2023!</li>      <li><strong>Nov. 2022:</strong> Our paper <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26494">Unsupervised Explanation Generation via Correct Instantiations</a> has been accepted by AAAI 2023!</li>      <li><strong>Oct. 2022:</strong> I was awarded with China National Scholarship!</li>
+      text: <ul><li><strong>Sep. 2024:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat&#58; Advancing Open-source Language Models with Mixed-Quality Data</a> has been accepted by ICLR 2024!</li>      <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2305.17650">Evolving Connectivity for Recurrent Spiking Neural Networks</a> has been accepted by NeurIPS 2023!</li>      <li><strong>Jul. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2307.02752">Offline Reinforcement Learning with Imbalanced Datasets</a> has been accepted by ICML Workshop 2023!</li>      <li><strong>May 2023:</strong> Three papers have been accepted by ACL 2023!</li>      <li><strong>Nov. 2022:</strong> Our paper <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26494">Unsupervised Explanation Generation via Correct Instantiations</a> has been accepted by AAAI 2023!</li>      <li><strong>Oct. 2022:</strong> I was awarded with China National Scholarship!</li>
 
     design:
       columns: '2' 
@@ -44,6 +44,14 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Research Intern
+          company: Pre-train and Multi-modal Group, 01.AI
+          company_url: 'https://01.ai/'
+          company_logo: org-01
+          location: Beijing, China
+          date_start: '2023-08-01'
+          date_end: ''
+          description: Supervised Fine-tuinng, working with Wenhao Huang, Xiang Yue and Xiangang Li.
         - title: Investment Intern
           company: Investment Department, Sinovation Ventures
           company_url: 'https://www.chuangxin.com/'

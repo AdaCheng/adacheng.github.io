@@ -38,7 +38,7 @@ summary: This study examines how BERT utilizes commonsense cues when solving com
 tags: [Foundation Models]
 
 # Display this page in the Featured widget?
-featured: True
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
