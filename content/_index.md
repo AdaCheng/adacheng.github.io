@@ -51,7 +51,7 @@ sections:
           location: Beijing, China
           date_start: '2023-08-01'
           date_end: ''
-          description: Supervised Fine-tuinng, working with Wenhao Huang, Xiang Yue and Xiangang Li.
+          description: Supervised Fine-tuinng, working with Wenhao Huang and Xiangang Li.
         - title: Investment Intern
           company: Investment Department, Sinovation Ventures
           company_url: 'https://www.chuangxin.com/'
