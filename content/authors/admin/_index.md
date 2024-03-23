@@ -6,7 +6,7 @@ title: Sijie Cheng
 superuser: true
 
 # Role/position/tagline
-role: Postgraduate
+role: Ph.D. Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -14,7 +14,7 @@ organizations:
     url: https://www.tsinghua.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
-bio: What is Past is Prologue.
+bio: Keep Looking, Do not Settle.
 
 # Interests to show in About widget
 interests:
@@ -42,10 +42,10 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:sjcheng@fudan.edu.cn'
-  # - icon: twitter
-  #   icon_pack: fab
-  #   link: https://twitter.com/GeorgeCushen
+    link: 'mailto:csj23@mails.tsinghua.edu.cn'
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/AdaChengSijie
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=pruwctkAAAAJ&hl=en
