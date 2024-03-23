@@ -29,7 +29,7 @@ sections:
       title: News
       text: 
         <ul>
-          <li><strong>Mar. 2024:</strong> Our paper <a href="https://zhichengg.github.io/stb.github.io/">StableToolBench&#58; Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models</a> have released!</li> 
+          <li><strong>Mar. 2024:</strong> Our paper <a href="https://zhichengg.github.io/stb.github.io/">StableToolBench&#58; Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models</a> have been released!</li> 
           <li><strong>Feb. 2024:</strong> Our paper <a href="https://adacheng.github.io/EgoThink/">Can Vision-Language Models Think from a First-Person Perspective?</a> has been accepted by CVPR 2024!</li> 
           <li><strong>Jan. 2024:</strong> Our paper <a href="https://arxiv.org/abs/2309.11235">OpenChat&#58; Advancing Open-source Language Models with Mixed-Quality Data</a> has been accepted by ICLR 2024!</li>
           <li><strong>Sep. 2023:</strong> Our paper <a href="https://arxiv.org/abs/2305.17650">Evolving Connectivity for Recurrent Spiking Neural Networks</a> has been accepted by NeurIPS 2023!</li>
@@ -59,7 +59,7 @@ sections:
           location: Beijing, China
           date_start: '2023-08-01'
           date_end: ''
-          description: Supervised Fine-tuinng, working with Wenhao Huang, Xiang Yue and Xiangang Li.
+          description: Supervised Fine-tuinng and Video-language Models.
         - title: Investment Intern
           company: Investment Department, Sinovation Ventures
           company_url: 'https://www.chuangxin.com/'
@@ -91,7 +91,7 @@ sections:
           location: Beijing, China
           date_start: '2020-11-01'
           date_end: '2021-06-01'
-          description: Taxonomy relational knowledge extraction, working with [Rui Xie](https://scholar.google.com/citations?hl=en&user=_GaB4AQAAAAJ). -> **ICDE 2022** and **ACL 2022**
+          description: Taxonomy relational knowledge extraction, working with [Rui Xie](https://scholar.google.com/citations?hl=en&user=_GaB4AQAAAAJ).
         - title: Visiting Fellow
           company: Text Intelligence Lab, Westlake University
           company_url: 'https://www.westlake.edu.cn/' 
@@ -99,7 +99,7 @@ sections:
           location: Hangzhou, China
           date_start: '2019-09-01'
           date_end: '2020-09-01'
-          description: Analysis of commonsense knowledge in pre-trained language model, advised by Prof. [Yue Zhang](https://frcchang.github.io/). -> **ACL 2021**
+          description: Analysis of commonsense knowledge in pre-trained language model, advised by Prof. [Yue Zhang](https://frcchang.github.io/).
     design:
       columns: '2'
 #  - block: collection
