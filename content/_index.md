@@ -59,7 +59,7 @@ sections:
           location: Beijing, China
           date_start: '2023-08-01'
           date_end: ''
-          description: Supervised Fine-tuinng and Video-language Models.
+          description: Supervised Fine-tuning and Video-Language Models.
         - title: Investment Intern
           company: Investment Department, Sinovation Ventures
           company_url: 'https://www.chuangxin.com/'
@@ -75,7 +75,7 @@ sections:
           location: Shanghai, China
           date_start: '2022-03-01'
           date_end: '2022-12-01'
-          description: Free-text explanation for reasoning, working with Prof. [Lingpeng Kong](https://ikekonglp.github.io/).
+          description: Free-text explanation with LLMs, working with Prof. [Lingpeng Kong](https://ikekonglp.github.io/).
         - title: Visiting Fellow
           company: Institue for AI Industry Research, Tsinghua University
           company_url: 'https://air.tsinghua.edu.cn/'
@@ -83,7 +83,7 @@ sections:
           location: Beijing, China
           date_start: '2021-07-01'
           date_end: '2022-02-01'
-          description: Large models as continual knowledge bases, advised by Prof. [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly/) and Prof. [Yang Liu](https://sites.google.com/site/yangliuveronica/).
+          description: LLMs as Continual Knowledge Bases, advised by Prof. [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly/) and Prof. [Yang Liu](https://sites.google.com/site/yangliuveronica/).
         - title: Research Intern
           company: Natural Language Understanding Group, Meituan NLP Center
           company_url: 'https://about.meituan.com/home' 
@@ -91,7 +91,7 @@ sections:
           location: Beijing, China
           date_start: '2020-11-01'
           date_end: '2021-06-01'
-          description: Taxonomy relational knowledge extraction, working with [Rui Xie](https://scholar.google.com/citations?hl=en&user=_GaB4AQAAAAJ).
+          description: Taxonomy Extraction by LLMs, working with [Rui Xie](https://scholar.google.com/citations?hl=en&user=_GaB4AQAAAAJ).
         - title: Visiting Fellow
           company: Text Intelligence Lab, Westlake University
           company_url: 'https://www.westlake.edu.cn/' 
@@ -99,7 +99,7 @@ sections:
           location: Hangzhou, China
           date_start: '2019-09-01'
           date_end: '2020-09-01'
-          description: Analysis of commonsense knowledge in pre-trained language model, advised by Prof. [Yue Zhang](https://frcchang.github.io/).
+          description: Analysis of commonsense knowledge in LLMs, advised by Prof. [Yue Zhang](https://frcchang.github.io/).
     design:
       columns: '2'
 #  - block: collection
