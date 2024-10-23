@@ -77,18 +77,13 @@ a:hover {
 body,
 td,
 th,
+tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 18px;
 }
 
-tr {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  display: block;
-  margin: 0px 0;
-}
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -118,7 +113,7 @@ h2 {
 .one {
   width: 220px;
   height: 160px;
-  position: relative;
+  vertical-align: middle;
 }
 
 .two {
