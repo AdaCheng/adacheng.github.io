@@ -77,11 +77,17 @@ a:hover {
 body,
 td,
 th,
-tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+tr {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: 2px 0;
 }
 
 strong {
